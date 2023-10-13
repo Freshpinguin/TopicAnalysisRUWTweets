@@ -46,3 +46,27 @@ Google's LaBSE model: Feng, Yang, Cer, Arivazhangang, Wang (2022)
 
 K-Flexibles LDA:
 Charemza, MMakarova, Rybinski (2022)
+
+### [6]: The first two Minths in the War in Ukraine through Topic Modelling and Sentiment Analysis.
+
+Building a technical solution for capturing topics and sentiments discussed by ukrainian speaking telegram users ~10.000 Messages from first two months of the war.
+Number of topics modelled:
+9 per day or 100 over whole two months.
+
+Twitter Crimmea Annexion related works:
+Brodovskaya et al. (2019)
+Chen and Ferrara (2022)
+Saluscher (2014)
+
+Other twitter Datasets:
+Pohl et al. (2022)
+Che and Ferrara (2022)
+Haq et al. (2022)
+Shertsov et al. (2022)
+Polyzos (2022)
+
+Chinese and Russian analysis:
+Hanley et al. (2022)
+
+Non Negative Matrix factorisation with kullback-leibler divergence (NMF-KL):
+Hien and Gillis (2021)
