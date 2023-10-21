@@ -70,3 +70,12 @@ Hanley et al. (2022)
 
 Non Negative Matrix factorisation with kullback-leibler divergence (NMF-KL):
 Hien and Gillis (2021)
+
+### [7]: Data-Driven Governance in Crises: Topic Modelling for the Identifaction of Refugee Needs
+
+Topic Analysis of refugee telegram data and interviews of refugess, public sector workers and voluntary helpers. All data from swiss.
+
+BertTopic, Metrics for Topics [14] 
+Bert [11]
+
+Emphasize problem of translation before topic modelling. Suggest usage of multilanguage approaches like BertTopic.
