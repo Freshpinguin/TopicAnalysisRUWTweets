@@ -47,7 +47,7 @@ Google's LaBSE model: Feng, Yang, Cer, Arivazhangang, Wang (2022)
 K-Flexibles LDA:
 Charemza, MMakarova, Rybinski (2022)
 
-### [6]: The first two Minths in the War in Ukraine through Topic Modelling and Sentiment Analysis.
+### [6]: The first two Months in the War in Ukraine through Topic Modelling and Sentiment Analysis.
 
 Building a technical solution for capturing topics and sentiments discussed by ukrainian speaking telegram users ~10.000 Messages from first two months of the war.
 Number of topics modelled:
@@ -79,3 +79,42 @@ BertTopic, Metrics for Topics [14]
 Bert [11]
 
 Emphasize problem of translation before topic modelling. Suggest usage of multilanguage approaches like BertTopic.
+
+### [8]: Topic Modelling on News Articles using Latent Dirchlet Allocation
+
+LDA pipeline example and metrics example.
+LDA explained in a new kinda interesting but also confusing way.
+LDA trained on 100MB Wiki dataset and tested on Reuthers news articles.
+Literature about generall use of lda.
+
+### [9]: First Six Months of War from Urkainian Topic and Sentiment Analysis
+
+Like [6] but with more data and time.
+9 Topics a day or 300 over 6 Months.
+
+### [10]: The Dynamics of Ukraine-Russian Conflict through the Lens of Demographically diverse Twitter Data
+
+Salim Sazzed, Old Dominion University , Norfolg USA, 2022 IEEE International Conference on Big Data
+
+Literature back the importance of twitter
+80000 tweets from 7 countries
+Sentiment Analysis/Topic Modelling with BERTopic/Lda splittet geographicly
+
+Sentiment Analysis:
+VADER [28]
+
+### [11]: Topic Modelling of ongoing Conflict betweet Russia and Ukraine
+
+Pradhan Nayak, Lakshmi JVN, Vandana V. Bhagat, 2022, International Conference on Trends in Quantum Computing and Emerging Business Technologies 
+
+LDA on news websites articles
+1178 articles 1.12.21 - 16.5.22
+
+Good sentences on why to use topic modelling lda, good methodology
+
+LDA - Mallet - Gibbons sampling approach?
+Exploratory Data Analysis
+Data Preprocessing Pipeline
+Perplexity Score
+Coherence Scroe
+PyLDAvis to visualise
