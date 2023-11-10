@@ -16,6 +16,7 @@ class OrigDataSchema(StrEnum):
     IS_RETWEET = "is_retweet"
     TIMESTAMP = "tweetcreatedts"
     ID = "tweetid"
+    USER_ID = "userid"
     TEXT = "text"
 
     IS_DUPL = "is_duplicate"

@@ -70,3 +70,32 @@ def print_folder_stats(data_path: str) ->  None:
     print(f"First date: {sorted(os.listdir(data_path))[0]}, Last date: {sorted(os.listdir(data_path))[-1]}")
     files = [os.stat(data_path+"/" + path).st_size/ (1024 * 1024) for path in  os.listdir(data_path)]
     print(f"Average file size: {sum(files)/len(files) :4.4} in mb")
+
+
+import matplotlib.pyplot as plt
+
+def plot_file_sizes(data_path: str, save_path: str = None) -> None:
+    """
+    Plots the sizes of csv files in path.
+    """
+    plt.rcParams['figure.figsize'] = [10, 5]
+    file_sizes = [os.stat(data_path+"/" + path).st_size/ (1024 * 1024) for path in  os.listdir(data_path)]
+    file_names = [x.split('.')[0] for x in os.listdir(data_path)]
+    
+    files = sorted(zip(file_sizes,file_names),key= lambda x:x[1])
+    
+    Y = [x[0] for x in files]
+    X = [x[1] for x in files]
+    fig, ax = plt.subplots()
+    
+    
+    ax.plot(X,Y)
+    _ = [l.set_visible(False) for (i,l) in enumerate(ax.xaxis.get_ticklabels()) if i % 50 != 0]
+    ax.set_title("Files size of csvs over time")
+    ax.set_ylabel('File size in mb')
+
+    if save_path:
+        plt.savefig(save_path)
+    plt.show()
+    
+    plt.rcParams['figure.figsize'] = [20, 10]
