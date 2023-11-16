@@ -292,9 +292,7 @@ def stackplot_duplicates_over_weeks(df: pd.DataFrame, save_path: str = None) -> 
 
 
 def stackplot_duplicates_over_weeks_multipl(df: pd.DataFrame, languages: np.ndarray[str], save_path: str = None ) -> None:
-    """
-    Gives multiple stackplot, one for every language provided. Paints duplicates and not duplicates in different colors.
-    """
+
     df = add_column_others(df, languages)
 
     languages = np.append(languages, 'others')

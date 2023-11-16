@@ -91,7 +91,7 @@ def plot_file_sizes(data_path: str, save_path: str = None) -> None:
     
     ax.plot(X,Y)
     _ = [l.set_visible(False) for (i,l) in enumerate(ax.xaxis.get_ticklabels()) if i % 50 != 0]
-    ax.set_title("Files size of csvs over time")
+    ax.set_title("File size of csvs over time")
     ax.set_ylabel('File size in mb')
 
     if save_path:
