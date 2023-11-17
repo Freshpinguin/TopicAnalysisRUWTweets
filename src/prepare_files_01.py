@@ -1,10 +1,12 @@
-import pandas as pd
-import os
-
 
 """
 Functionality for Chapter 01.Data Source and Information about Provider.
 """
+
+
+import pandas as pd
+import os
+
 
 def move_files_into_one_dir(archive_path: str) -> None:
     """
@@ -43,7 +45,7 @@ def merge_splitted_files(data_path: str) -> None:
         raise FileNotFoundError("Files to merge not found")
     df_1 = pd.read_csv(data_path+"UkraineCombinedTweetsDeduped_FEB28_part1.csv")#
     df_2 = pd.read_csv(data_path+"UkraineCombinedTweetsDeduped_FEB28_part2.csv")
-    df = pd.concat([df_1,df_1])
+    df = pd.concat([df_1,df_2])
     df.to_csv("UkraineCombinedTweetsDeduped_FEB28.csv")
     os.remove(data_path+"UkraineCombinedTweetsDeduped_FEB28_part1.csv")
     os.remove(data_path+"UkraineCombinedTweetsDeduped_FEB28_part2.csv")

@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import numpy.typing as npt
 import warnings
 from typing import Dict, Iterator, Any
 import matplotlib.pyplot as plt
@@ -9,9 +8,9 @@ import os
 from tqdm.auto import tqdm
 tqdm.pandas()
 from enum import StrEnum
-import math
 from src.data_schemas import OrigDataSchema, MetaDataSchema
 import matplotlib.patches as mpatches
+
 
 def iterate_dataframes(path: str) -> Iterator[pd.DataFrame]:
     """
@@ -45,34 +44,6 @@ def aggregate_dataframe(df: pd.DataFrame) -> Dict[str, Any]:
     aggregation = {**dict(zip(languages, lang_counts)), **aggregation, **dict(zip(languages_dupl, lang_dupl_counts))}
     return aggregation
     
-
-def aggregate_data(dir_path: str, target_path: str) -> pd.DataFrame:
-    """
-    Creates aggregated data frame and saves it as csv.
-    """
-
-    agg_dicts = []
-    for df in iterate_dataframes(dir_path):
-        agg = aggregate_dataframe(df)
-        agg_dicts.append(agg)
-    df_agg = pd.DataFrame(agg_dicts).fillna(0)
-    df_agg.to_csv(target_path)
-    
-
-def get_all_aggregated_data() -> pd.DataFrame:
-    """
-    Loads or creates all aggregated data.
-    """
-    path_2023 = "/Users/robinfeldmann/TopicAnalysisRUWTweets/Data/AggregatedData/2023_agg.csv"
-    path_2022 = "/Users/robinfeldmann/TopicAnalysisRUWTweets/Data/AggregatedData/2022_agg.csv"
-
-    df_agg_2023 = pd.read_csv(path_2023)
-    df_agg_2022 = pd.read_csv(path_2022)
-
-    df_agg = pd.concat([df_agg_2022,df_agg_2023]).fillna(0)
-    return df_agg
-
-
 
 def exploration_in_numbers(df_agg: pd.DataFrame) -> None:
     """
@@ -119,7 +90,6 @@ def languages_tabular(df: pd.DataFrame, languages_to_show: np.ndarray[str]) -> N
         if not la in df.columns:
             raise KeyError(f"Language: {la} not in df columns.")
     
-    languages_dupl = np.array([la + "_dupl" for la in languages_to_show])
     language_counts = np.array([df[la].sum() for la in languages_to_show])
 
     sorting = np.argsort(language_counts)[::-1]
@@ -143,7 +113,6 @@ def languages_bar_h(df_agg: pd.DataFrame, languages_to_show:np.ndarray[str]) -> 
     languages_to_show = np.append( languages_to_show,'others')
 
     df = df_agg
-    languages_dupl = np.array([la + "_dupl" for la in languages_to_show])
     language_counts = np.array([df[la].sum() for la in languages_to_show])
     
     sorting = np.argsort(language_counts)
@@ -157,7 +126,6 @@ def languages_bar_h(df_agg: pd.DataFrame, languages_to_show:np.ndarray[str]) -> 
     language_counts = language_counts - language_dupl
     
     language_freqs = np.array([la_count/language_counts_dupl.sum() for la_count in language_counts_dupl])
-    language_dupl_freq = (language_dupl/language_counts)*language_freqs
     
     fig, ax = plt.subplots()
     
