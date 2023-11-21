@@ -61,35 +61,19 @@ def aggregate_languages(df: pd.DataFrame) -> dict:
             "dupl_count": dupl_count,
             "dates": unique_dates}
 
-def aggregate_languages(df: pd.DataFrame) -> dict:
-    """
-    Aggregates a dataframe containing info about one language to a single column.
-    """
-    df['dupl'] = df.duplicated(subset=OrigDataSchema.TEXT) if  OrigDataSchema.IS_RETWEET not in df.columns else df.duplicated(subset=OrigDataSchema.TEXT) | df[OrigDataSchema.IS_RETWEET]
-
-    dupl_count = df['dupl'].sum()
-    count = df.shape[0]
-
-    lang = df[OrigDataSchema.LANGUAGE].unique()[0]
-    unique_dates = df[OrigDataSchema.TIMESTAMP].unique().shape[0]
-
-    return {"la": lang,
-            "count" :count,
-            "dupl_count": dupl_count,
-            "dates": unique_dates}
-
-
-
-def aggregate_languages_weeks(df: pd.DataFrame) -> dict:
+def aggregate_languages_weeks(df: pd.DataFrame, agg_dict:dict) -> dict:
     """
     Aggregates a dataframme containing info about one language to a column per week.
     """
+
+    if not agg_dict:
+        agg_dict = {OrigDataSchema.ID: 'count',
+                                        'dupl': 'sum'}
 
     df['dupl'] = df.duplicated(subset=OrigDataSchema.TEXT) if  OrigDataSchema.IS_RETWEET not in df.columns else df.duplicated(subset=OrigDataSchema.TEXT) | df[OrigDataSchema.IS_RETWEET]
 
     df['weeks'] = df[OrigDataSchema.TIMESTAMP].apply(pd.to_datetime).apply(lambda x: str(x.year)+ "-" + str(x.week) if len(str(x.week))==2 else str(x.year)+ "-0" + str(x.week))
 
-    df_weeks = df.groupby('weeks').agg({OrigDataSchema.ID: 'count',
-                                        'dupl': 'sum'})
+    df_weeks = df.groupby('weeks').agg(agg_dict)
     
     return df_weeks
