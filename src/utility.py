@@ -48,6 +48,23 @@ def aggregate_data(dir_path: str, target_path: str, aggregate_function: Callable
         agg_dicts.append(agg)
     df_agg = pd.DataFrame(agg_dicts).fillna(0)
     df_agg.to_csv(target_path)
+    return df_agg
+
+
+def aggregate_data_multiple_rows(dir_path: str, target_path: str, aggregate_function: Callable[[pd.DataFrame], list[dict]]) -> pd.DataFrame:
+    """
+    Creates aggregated data frame and saves it as csv.
+    """
+
+    agg_dicts = []
+    for df in iterate_dataframes(dir_path):
+        agg = aggregate_function(df)
+        agg_dicts.append(agg)
+
+    flatten_dicts = [dic for list_dic in agg_dicts for dic in list_dic]
+    df_agg = pd.DataFrame(flatten_dicts).fillna(0)
+    df_agg.to_csv(target_path)
+    return df_agg
     
 
 def iterate_language_dataframes(path: str) -> Iterator[tuple[pd.DataFrame, str]]:
