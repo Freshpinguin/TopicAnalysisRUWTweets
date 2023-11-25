@@ -25,14 +25,18 @@ def iterate_dataframes(path: str) -> Iterator[pd.DataFrame]:
 
 
     
-def iterate_dataframes_path(path: str) -> Iterator[tuple[pd.DataFrame,str]]:
+def iterate_dataframes_path(path: str, supress_tqdm=False) -> Iterator[tuple[pd.DataFrame,str]]:
     """
     Iterates over all .csv files in path as pd.DataFrame
     """
     with warnings.catch_warnings():
         warnings.filterwarnings("ignore", category=pd.errors.DtypeWarning)
         csvs = [path + x for x in os.listdir(path) if "csv" in x]
-    
+
+        if supress_tqdm:
+            for csv in csvs:
+                yield pd.read_csv(csv,  lineterminator='\n'), csv
+            return 
         for csv in tqdm(csvs):
             yield pd.read_csv(csv,  lineterminator='\n'), csv
 
@@ -50,6 +54,18 @@ def aggregate_data(dir_path: str, target_path: str, aggregate_function: Callable
     df_agg.to_csv(target_path)
     return df_agg
 
+def aggregate_data_path(dir_path: str, target_path: str, aggregate_function: Callable[[pd.DataFrame, str], dict]) -> pd.DataFrame:
+    """
+    Creates aggregated data frame and saves it as csv.
+    """
+
+    agg_dicts = []
+    for df, path in iterate_dataframes_path(dir_path):
+        agg = aggregate_function(df, path)
+        agg_dicts.append(agg)
+    df_agg = pd.DataFrame(agg_dicts).fillna(0)
+    df_agg.to_csv(target_path)
+    return df_agg
 
 def aggregate_data_multiple_rows(dir_path: str, target_path: str, aggregate_function: Callable[[pd.DataFrame], list[dict]]) -> pd.DataFrame:
     """
