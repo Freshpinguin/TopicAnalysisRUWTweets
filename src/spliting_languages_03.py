@@ -5,6 +5,8 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import warnings
+from tqdm.auto import tqdm
+tqdm.pandas()
 
 def split_csvs_into_language(languages: list[str], data_path: str, target_path: str) -> None:
     """
