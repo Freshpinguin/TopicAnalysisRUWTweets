@@ -51,3 +51,9 @@ class LanguageMetaDataSchema(StrEnum):
     """
 
     NOTHING = "yet"
+
+class MinLanguageDataSchema(StrEnum):
+    TEXT = "text"
+    TIMESTAMP = "tweetcreatedts"
+    ID = "tweetid"
+    DUPL = "dupl"
