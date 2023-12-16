@@ -119,40 +119,44 @@ def duplicates_ex(df: pd.DataFrame, row_name: str='dupl', nr: int=30) -> None:
         print("="*200)
 
 
-def save_meta_data(df: pd.DataFrame, lang:str, row_name: str='dupl', path_to_meta_data: str= "/Users/robinfeldmann/TopicAnalysisRUWTweets/Data/AggregatedData/noisy_dedupl.csv") -> None:
-       meta_df = pd.read_csv(path_to_meta_data)
+def _save_meta_data(df: pd.DataFrame, lang:str, row_name: str='dupl', path_to_meta_data: str= "/Users/robinfeldmann/TopicAnalysisRUWTweets/Data/AggregatedData/noisy_dedupl.csv") -> None:
+       
+    meta_df = pd.read_csv(path_to_meta_data)
 
-       df_min = df[~df[row_name].apply(lambda x: x==[])]
+    df_min = df[~df[row_name].apply(lambda x: x==[])]
 
-       duplicates = df_min.shape[0]
-       duplicates_fraction = df_min.shape[0]/df.shape[0]
-       example_0_0 = df_min.iloc[0]['text']
-       example_0_1 = df.query(f"index=={df_min.iloc[0][row_name][0]}").iloc[0]['text']
+    duplicates = df_min.shape[0]
+    duplicates_fraction = df_min.shape[0]/df.shape[0]
+    example_0_0 = df_min.iloc[0]['text']
+    example_0_1 = df.query(f"index=={df_min.iloc[0][row_name][0]}").iloc[0]['text']
 
-       example_1_0 = df_min.iloc[1]['text']
-       example_1_1 = df.query(f"index=={df_min.iloc[1][row_name][0]}").iloc[0]['text']
+    example_1_0 = df_min.iloc[1]['text']
+    example_1_1 = df.query(f"index=={df_min.iloc[1][row_name][0]}").iloc[0]['text']
 
-       example_2_0 = df_min.iloc[2]['text']
-       example_2_1 = df.query(f"index=={df_min.iloc[2][row_name][0]}").iloc[0]['text']
-
-
-       row = {'duplicates': duplicates,
-              'old_lines': df.shape[0],
-              'duplicates_fraction': duplicates_fraction,
-              'lang': lang,
-              'ex_0_0': example_0_0,
-              'ex_0_1': example_0_1,
-              'ex_1_0': example_1_0,
-              'ex_1_1': example_1_1,
-              'ex_2_0': example_2_0,
-              'ex_2_1': example_2_1
-              }
-
-       pd.concat([meta_df, pd.DataFrame([row])]).to_csv(path_to_meta_data)
+    example_2_0 = df_min.iloc[2]['text']
+    example_2_1 = df.query(f"index=={df_min.iloc[2][row_name][0]}").iloc[0]['text']
 
 
+    row = {'duplicates': duplicates,
+            'old_lines': df.shape[0],
+            'duplicates_fraction': duplicates_fraction,
+            'lang': lang,
+            'ex_0_0': example_0_0,
+            'ex_0_1': example_0_1,
+            'ex_1_0': example_1_0,
+            'ex_1_1': example_1_1,
+            'ex_2_0': example_2_0,
+            'ex_2_1': example_2_1
+            }
 
-def load_dedupl_save_pipeline(source_path: str, target_path: str):
+    pd.concat([meta_df, pd.DataFrame([row])]).to_csv(path_to_meta_data)
+
+
+
+def load_dedupl_save_pipeline(source_path: str, target_path: str) -> None:
+    """
+    Lodas data. Deduplicates data. Saves meta data. Saves deduplicated data.
+    """
     df = pd.read_csv(source_path)
     df = df.drop_duplicates(subset=OrigDataSchema.ID)
     df = df[[OrigDataSchema.TEXT,OrigDataSchema.TIMESTAMP,OrigDataSchema.ID]]
@@ -161,7 +165,7 @@ def load_dedupl_save_pipeline(source_path: str, target_path: str):
 
     lang = source_path.split('/')[-1].split('.')[0]
 
-    save_meta_data(df, lang=lang)
+    _save_meta_data(df, lang=lang)
     duplicates_ex(df, nr=0)
 
 

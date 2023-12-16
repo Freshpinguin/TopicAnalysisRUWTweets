@@ -2,7 +2,9 @@ from google.cloud import translate
 
 
 def translate_text(text:str="Hello, world!", project_id: str="evident-display-407715", source_language: str="en-US") -> str:
-
+    """
+    Translates text via Google Translate Api from source language to english.
+    """
     client = translate.TranslationServiceClient()
     location = "global"
     parent = f"projects/{project_id}/locations/{location}"
