@@ -1,0 +1,85 @@
+from google.cloud import translate
+import pandas as pd
+from tqdm.auto import tqdm
+from src.data_schemas import MinLanguageDataSchema
+tqdm.pandas()
+
+def translate_text(text:str="Hello, world!", project_id: str="evident-display-407715", source_language: str="en-US") -> str:
+    """
+    Translates text via Google Translate Api from source language to english.
+    """
+    client = translate.TranslationServiceClient()
+    location = "global"
+    parent = f"projects/{project_id}/locations/{location}"
+
+    response = client.translate_text(
+        request={
+            "parent": parent,
+            "contents": [text],
+            "mime_type": "text/plain",
+            "source_language_code": source_language,
+            "target_language_code": "en-US",
+        }
+    )
+
+
+
+    return " ".join([transl.translated_text for transl in response.translations])
+
+
+def translate_text_multiple(list_of_texts:list[str], project_id: str="evident-display-407715", source_language: str="en-US") -> list[str]:
+    """
+    Translates text via Google Translate Api from source language to english.
+    """
+    client = translate.TranslationServiceClient()
+    location = "global"
+    parent = f"projects/{project_id}/locations/{location}"
+
+    response = client.translate_text(
+        request={
+            "parent": parent,
+            "contents": list_of_texts,
+            "mime_type": "text/plain",
+            "source_language_code": source_language,
+            "target_language_code": "en-US",
+        }
+    )
+
+
+
+    return [transl.translated_text for transl in response.translations]
+
+
+def translate_df(df: pd.DataFrame, source_lang: str, batch_size: int=100) -> pd.Series:
+    """
+    Translate the text row in a dataframe using translate multiples function.
+    """
+
+    translated = []
+    for i in tqdm(range(0,df.shape[0], batch_size)):
+
+        listed_data = df['text'][i:i+batch_size].to_list()
+
+        translated += translate_text_multiple(listed_data, source_language= source_lang)
+        
+
+    return translated
+
+
+
+
+def create_week_from_timestamp(df: pd.DataFrame, source_name:str = MinLanguageDataSchema.TIMESTAMP) -> pd.Series:
+    """
+    Creates weeks from timestamps rouw in a dataframe.
+    """
+    date = df[source_name].astype(str).progress_apply(lambda x: x[:10]).progress_apply(pd.to_datetime)
+    return date.progress_apply(lambda x: str(x.year)+ "-" + str(x.week) if len(str(x.week))==2 else str(x.year)+ "-0" + str(x.week))
+    
+
+def sample_from_weeks(df: pd.DataFrame, sample_size:int = 100, row_name: str = 'week') -> pd.DataFrame:
+    """
+    Take sample_size samples from every week in dataframe.
+    """
+    return df.groupby(row_name).sample(sample_size)
+
+

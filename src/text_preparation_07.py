@@ -64,7 +64,7 @@ def extract_entities(doc: Doc,unused_param=None, sep='_') -> list[str]:
     
     return ents
 
-def extract_nlp(doc: Doc) -> dict[str,list[str]]:
+def extract_nlp(doc: Doc, prefix: str= "") -> dict[str,list[str]]:
 
     # same definition as above - just in case
     def extract_lemmas(doc, include_pos = None): # None extracts all lemmas
@@ -72,13 +72,13 @@ def extract_nlp(doc: Doc) -> dict[str,list[str]]:
             if include_pos is None or t.pos_ in include_pos and not t._.is_emoji or 'EMOJI' in include_pos and t._.is_emoji ]
 
     return {
-    'lemmas'          : extract_lemmas(doc, 
+    f'{prefix}lemmas'          : extract_lemmas(doc, 
                           include_pos = ['ADJ', 'ADP', 'ADV', 'VERB', 'INTJ', 
                                          'NOUN', 'PROPN', 'PRON', 'VERB']),
-    'adjs_verbs'      : extract_lemmas(doc, include_pos = ['ADJ', 'VERB']),
-    'nouns'           : extract_lemmas(doc, include_pos = ['NOUN', 'PROPN']),
-    'entities'        : extract_entities(doc, ['PER', 'ORG', 'GPE', 'LOC']),
-    'emojis'          : extract_lemmas(doc, include_pos=['EMOJI'])
+    f'{prefix}adjs_verbs'      : extract_lemmas(doc, include_pos = ['ADJ', 'VERB']),
+    f'{prefix}nouns'           : extract_lemmas(doc, include_pos = ['NOUN', 'PROPN']),
+    f'{prefix}entities'        : extract_entities(doc, ['PER', 'ORG', 'GPE', 'LOC']),
+    f'{prefix}emojis'          : extract_lemmas(doc, include_pos=['EMOJI'])
     }
 
 def display_nlp(doc: Doc, include_punct=False):
@@ -96,12 +96,12 @@ def display_nlp(doc: Doc, include_punct=False):
     df.index.name = None
     return df
 
-def add_lemmas_to_df(df: pd.DataFrame, nlp:Language ) -> pd.DataFrame:
+def add_lemmas_to_df(df: pd.DataFrame, nlp:Language, source_row: str = 'cleaned_text' , target_row_prefix: str="") -> pd.DataFrame:
     batch_size = 100
     num_batches = math.ceil(len(df) / batch_size)
 
 
-    nlp_columns = list(extract_nlp(nlp.make_doc('')).keys())
+    nlp_columns = list(extract_nlp(nlp.make_doc(''), prefix = target_row_prefix).keys())
 
 
     for col in nlp_columns:
@@ -112,12 +112,12 @@ def add_lemmas_to_df(df: pd.DataFrame, nlp:Language ) -> pd.DataFrame:
         for i in tqdm(range(0, len(df), batch_size), total=num_batches):
             
             # spaCy Batch-Verarbeitung mit nlp.pipe, liefert eine Liste von Ergebnis-Docs
-            docs = nlp.pipe(df['cleaned_text'][i:i+batch_size])
+            docs = nlp.pipe(df[source_row][i:i+batch_size])
 
             try:
                 # Extraktion der Lemmas und Eintragen im DataFrame für einen Batch
                 for j, doc in enumerate(docs):
-                    for col, values in extract_nlp(doc).items():
+                    for col, values in extract_nlp(doc, target_row_prefix).items():
                         df[col].iloc[i+j] = values
             except:
                 print('ERROR', i)
