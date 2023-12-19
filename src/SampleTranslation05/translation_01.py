@@ -83,3 +83,26 @@ def sample_from_weeks(df: pd.DataFrame, sample_size:int = 100, row_name: str = '
     return df.groupby(row_name).sample(sample_size)
 
 
+def load_samples(path: str = '/Users/robinfeldmann/TopicAnalysisRUWTweets/src/SampleTranslation05/samples_ready.csv') -> pd.DataFrame:
+
+    df = pd.read_csv(path)
+
+    def listify(series: pd.Series) -> pd.Series:
+        return series.str.strip("[]").str.replace(' ','').str.split(',')
+
+
+    df = df.assign(
+        lemmas = df['lemmas'].str.strip("[]").str.replace(' ','').str.replace("'","").str.split(','),
+        adjs_verbs= df['adjs_verbs'].str.strip("[]").str.replace(' ','').str.replace("'","").str.split(','),
+        nouns = df['nouns'].str.strip("[]").str.replace(' ','').str.replace("'","").str.split(','),
+        emojis = df['emojis'].str.strip("[]").str.replace(' ','').str.replace("'",'').str.split(','),
+        entities = df['entities'].str.strip("[]").str.replace(' ','').str.replace("'",'').str.split(','),
+        translated_lemmas = df['translated_lemmas'].str.strip("[]").str.replace(' ','').str.replace("'","").str.split(','),
+        translated_adjs_verbs = df['translated_adjs_verbs'].str.strip("[]").str.replace(' ','').str.replace("'","").str.split(','),
+        translated_nouns = df['translated_nouns'].str.strip("[]").str.replace(' ','').str.replace("'","").str.split(','),
+        translated_entities = df['translated_entities'].str.strip("[]").str.replace(' ','').str.replace("'",'').str.split(','),
+        translated_emojis = df['translated_emojis'].str.strip("[]").str.replace(' ','').str.replace("'",'').str.split(','),
+
+    )
+
+    return df
