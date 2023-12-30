@@ -51,3 +51,31 @@ Hoyle et al 2020
 
 Only neural multilingua topic model:
 Wu et at 2020
+
+
+## [3] Sentence-BERT: Sentence Embeddings using SIamese BERT-Networks
+27.8.2019
+Nils Reimers, Iryna Gurevych
+Technische Universität Darmstadt
+
+Builds upon:
+BERT: Devlin et al 2018
+RoBERTa: Liu et al 2019
+
+Bert calculates semantic similiarity between two senteces. No embeddings. 
+SBert adds pooling to the output of BERT/RoBERTa to get fixed length embedding.
+Using either the output of the CLS Token(?)/Mean output of all vectors/or max-over-time.
+SBert was trained on siamese network structure, by having a training set of fitting pairs and calculating the loss of the output of those pairs embedding after some distance function over the embeddings.
+
+
+## [4] Principal component analysis: a review and recent developments
+Ian T. Jolliffe, Jorge Cadima
+
+University of Exeter, Exeter, UK
+19.01.2016
+
+PCA:
+How it works,
+How it is used,
+What are the issues and what are the benefits.
+
