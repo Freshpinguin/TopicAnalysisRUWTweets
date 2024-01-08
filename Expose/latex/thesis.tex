@@ -1,0 +1,219 @@
+\documentclass[
+    11pt,
+    a4paper,
+    egregdoesnotlikesansseriftitles,
+    toc=chapterentrywithdots,
+    oneside,openright,
+    titlepage,
+    parskip=half,
+    headings=normal,  % reduces heading size
+    listof=totoc,
+    bibliography=totoc,
+    index=totoc,
+    captions=tableheading,  % caption below table
+    chapterprefix,
+    listof=flat,
+    final
+]{scrbook}
+
+
+% details about your thesis
+\newcommand{\titel}{Verknüpfung von Datensätzen über Erwerbsbiographien und Stellenangeboten zum trainieren eines Machine Learning Modells zur Unterstützung bei der Arbeitsvermittlung.}
+\newcommand{\artderarbeit}{Expose Bachelorarbeit}  % {Bachelorarbeit,Masterarbeit}
+\newcommand{\autor}{Robin Feldmann}
+\newcommand{\studiengang}{Informatik}  % {Informatik,Wirtschaftsinformatik,Medieninformatik}
+\newcommand{\matrikelnr}{3538270 - Ca. 9000 Zeichen}
+\newcommand{\erstgutachter}{Prof.\,Dr.~Korbinian Riedhammer}
+\newcommand{\zweitgutachter}{Prof.\,Dr.~Bartosz von\,Rymon\,Lipinski}
+\newcommand{\betreuer}{M.Sc.\,~Martina Schmidt}
+\newcommand{\unternehmen}{Institut für Arbeitsmarktforschung}
+\newcommand{\logo}{figures/TH-Nuernberg-RGB.png}
+\newcommand{\keywords}{hot, fuzz}
+ 
+
+% custom head and foot
+\usepackage[automark]{scrlayer-scrpage}
+\pagestyle{plain}
+\ihead{\headmark}
+\chead{}
+\ohead{\pagemark}
+\renewcommand*\chaptermarkformat{\chapappifchapterprefix{\ }% 
+  \thechapter.\enskip}
+
+\RedeclareSectionCommand[tocindent=0pt]{section}
+\RedeclareSectionCommand[tocindent=0pt]{subsection}
+%\RedeclareSectionCommand[tocnumwidth=70pt]{chapter}
+
+\usepackage{scrhack}
+
+% other packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,relsize,textcomp,csquotes}
+\usepackage{amsmath,amsfonts}
+\usepackage[english,ngerman]{babel}  % flip for German thesis
+\usepackage[final]{graphicx}
+\usepackage{setspace,geometry,xcolor}
+\usepackage{makeidx}
+\usepackage{paralist,ifthen,todonotes}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{titlesec}
+% table setup
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{lscape}
+\usepackage{cite}
+% pdf hyperref
+\usepackage[
+    bookmarks=true,
+    bookmarksopen=true,
+    bookmarksnumbered=true,
+    bookmarksopenlevel=1,
+    pdftitle={\titel},
+    pdfauthor={\autor},
+    pdfcreator={\autor},
+    pdfsubject={\titel},
+    pdfkeywords={\keywords},
+    pdfpagelabels=true,
+    colorlinks=true,
+    linkcolor=red,
+    urlcolor=magenta,
+    anchorcolor=black,
+    citecolor=cyan,
+    filecolor=magenta,
+    menucolor=red,
+    plainpages=false,
+    hypertexnames=true,
+    linktocpage=true,
+]{hyperref}
+
+\usepackage[toc,acronym]{glossaries}
+
+% configure your listings style
+\usepackage{listings}
+\lstset{
+	tabsize=3,
+	extendedchars=true,
+	frame=single,
+	showstringspaces=true,
+	numbers=left,
+	numberstyle=\small,
+	breakautoindent=true
+}
+
+% page setup
+% \setlength{\topskip}{\ht\strutbox}
+\geometry{paper=a4paper,left=2.5cm,top=3.0cm,bindingoffset=.8cm}
+\onehalfspacing
+\frenchspacing
+\clubpenalty = 10000
+\widowpenalty = 10000 
+\displaywidowpenalty = 10000
+
+% some commands
+\newcommand{\ua}{\mbox{u.\,a.\ }}
+\newcommand{\zB}{\mbox{z.\,B.\ }}
+\newcommand{\dahe}{\mbox{d.\,h.,\ }}
+\newcommand{\bzw}{\mbox{bzw.\ }}
+\newcommand{\bzgl}{\mbox{bzgl.\ }}
+\newcommand{\eg}{\mbox{e.\,g.\ }}
+\newcommand{\ie}{\mbox{i.\,e.\ }}
+\newcommand{\wrt}{\mbox{w.\,r.\,t.\ }}
+\newcommand{\etal}{\mbox{\emph{et.\,al.\ }}}
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Large}
+
+
+
+% TODO remove if not needed...
+\usepackage{blindtext}
+
+% load glossary entries
+\begin{document}
+
+\setcounter{secnumdepth}{3}  % numerate subsections
+\setcounter{tocdepth}{2}  % ...but don't include them in toc
+
+\frontmatter
+\pagenumbering{arabic} 
+\include{cover}
+
+% download the following form and complete it (hit save in your editor)
+% https://intern.ohmportal.de/fileadmin/Gelenkte_Doks/Abt/SZS/SB/SB_0050_FO_Pruefungsrechtliche_Erklaerung_und_Erklaerung_zur_Veroeffentlichung_der_Abschlussarbeit_public.pdf
+%\includepdf{SB_0050_FO_Pruefungsrechtliche_Erklaerung_und_Erklaerung_zur_Veroeffentlichung_der_Abschlussarbeit_public.pdf}\cleardoublepage
+
+
+\tableofcontents
+
+
+{\let\clearpage\relax \chapter{Ausgangslage}}
+Arbeit ist ein zentraler Bestandteil unseres alltäglichen Lebens und unserer Gesellschaft. Folglich führt Arbeitslosigkeit bei Betroffenen zu gravierenden gesundheitlichen und sozialen Nachtteilen. Auch gesamtgesellschaftlich hat Arbeitslosigkeit viele negative Folgen \cite{Bpb}. 
+Die Bundesagentur für Arbeit macht es sich zum Ziel, diese Probleme durch Arbeitsvermittlung zu bekämpfen \cite{BasVors} und schreibt dazu in ihrer Präambel:
+\textit{Die Arbeitsvermittlung ist ein wichtiger Bestandteil der staatlichen Daseinsvorsorge und gehört zum Kern moderner Dienstleistungen am Arbeitsmarkt.} 
+\cite{Bas}. Arbeitsvermittlung meint dabei das Zusammenführen von Informationen über Angebot und Nachfrage der Arbeitsmärkte \cite{Bpbarbeit}.
+\newline
+Dieser Prozess beginnt dabei mit der Erfassung persönlicher Merkmale und Fähigkeiten der Arbeitssuchenden. Im nächsten Schritt werden dem Arbeitssuchenden passend zu seinem Profil Stellenangebote vorgeschlagen \cite{Bas}. Dieser Schritt wird in der Arbeitsmarktökonomik als Matching Prozess bezeichnet. Der Matching Prozess kann als mathematische Abbildung abstrahiert werden. Die Parameter dieser Abbildung sind Informationen sowohl über den Arbeitssuchenden als auch über das Stellenangebot. Der Rückgabewert ist die Wahrscheinlichkeit, dass der Arbeitssuchende in der Stelle arbeiten wird \cite{grandstrand}.
+Für das Schätzen so einer Abbildung im Kontext des Arbeitsmarktmatchings eignen sich Methoden des maschinellen Lernens \cite{mül}.
+
+{\let\clearpage\relax \chapter{Zielsetzung}}
+Das Ziel der Bachelorarbeit ist im Zuge eines Praktikums beim Institut für Arbeitsmarkt- und Berufsforschung in Zusammenarbeit mit Fr. Sabrina Mühlbauer zwei Datensätze miteinander zu Identifizieren(vgl.\nameref{Methodik}). Dann soll Anhand dieser miteinander identifizierten Datensätze ein Modell des maschinellen Lernens entwickelt werden. Dieser soll es ermöglichen bei der Arbeitsvermittlung für individuelle Arbeitssuchende anhand von Informationen über deren Lebenslauf und Qualifikation offene Arbeitsstellen daraufhin zu bewerten, wie gut sie zum Arbeitssuchenden passen. 
+
+{\let\clearpage\relax \chapter{Forschungsstand}}
+Die Arbeit wird im Zuge eines Praktikums beim Institut für Arbeitsmarkt- und Berufsforschung unter der Betreuung von Fr. Sabrina Mühlbauer verfasst. Diese Arbeit soll auf der Veröffentlichung \textit{Machine Learning for Labour Market Matching} aufbauen\cite{mül}. In dieser Arbeit wird ein Ansatz beschrieben anhand von statistischen Methoden und Methoden des maschinellen Lernens Arbeitssuchende bei der Auswahl des zukünftigen Berufsfelds zu unterstützen. Hierfür wird ein Datensatz über Berufsbiographien verwendet um anhand der Berufshistorie einer Person Aussagen über das zukünftige Berufsfeld treffen zu können. Hierbei wird die Effektivität von statistischen Methoden mit dem Random Forest und dem K-Nearest-Neighbours Algorithmus verglichen. Fr. Mühlbauer kommt zu dem Ergebnis, dass der Random Forest Algorithmus hierfür am besten geeignet ist \cite{mül}. In anderen Veröffentlichungen werden auch sogenannte \textit{Learning to Rank} Ansätze untersucht, um bei Online Jobbörsen Vorschläge für Arbeitssuchende zu bewerten \cite{hiri}.
+Es soll für einen Arbeitssuchenden ermittelt werden, in wie fern ein spezifisches Jobangebot zu diesem passt um so Arbeitsvermittler bei der Auswahl von Jobvorschlägen zu unterstützen. Außerdem soll mit dem XGBoost Algorithmus eine Verbesserung des Random Forest getestet und evaluiert werden.
+\newline
+
+
+
+
+
+
+
+
+
+
+{\let\clearpage\relax \chapter{Methodik}\label{Methodik}}
+Datengrundlage für die Arbeit ist der Datensatz über Integrierte Erwerbsbiografien (IEB) des Instituts für Arbeitsmarkt und Berufsforschung. Dieser Datensatz enthält Erwerbsverläufe aller Personen die in Deutschland seit 1975 sozialversicherungspflichtig beschäftigt war. Er enthält Informationen über Geburtsjahr und Ausbildung, Leistungsbezug und Beschäftigung \cite{ieb}.
+Ein weiterer Datensatz, zu dem zum mir Zeitpunkt dieses Expose noch keine genaueren Informationen erhältlich sind wird historische Daten über offene Stellenangebote beinhalten. In diesem Datensatz wird zu den Stellenangeboten Informationen über deren Erstellungsdatum und Aufslaufdatum, über den Betrieb und in welche Kategorie die Arbeitsstelle fällt, beinhalten. In einem ersten Schritt sollen die Erwerbsbiografien des IEB anhand der Betriebe, der Zeitpunkte und der Art der Beschäftigung mit historischen Stellenangeboten identifiziert werden. Es werden also paare von Datenpunkte erstellt, bei denen sichergestellt ist, dass eine spezifische Arbeitsbiografie eine spezifisches Tätigkeit beinhaltet, die vorher als Jobangebot ausgeschrieben war. Diese Kombination aus zusammengehörigen Erwerbsbiografien und Stellenangeboten wird die Grundlage für das Training eines Algorithmus des maschinellen Lernens bilden.
+
+Da als Vorbereitung bereits passende Verknüpfungen zwischen Informationen über Jobsuchenden aus dem Datensatz über Erwerbsbiographien und Informationen aus dem Datensatz über Stellenangebote hergestellt wurden, handelt es sich um \textit{überwachtes Lernen}. Das Schätzen von Wahrscheinlichkeiten also von reellwertigen Labeln bezeichnet man als Regressionsproblem  \cite{mlfound}. Im Laufe der Arbeit sollen verschiedene Algorithmen des überwachten Lernens zum lösen von Regressionsproblemen verglichen und anhand von vorher definierten Metriken bewertet werden. Zum jetzigen Zeitpunkt ist geplant drei solcher Algorithmen zu vergleichen: Support Vector Machine (SVM), Random Forest (RF) und XGBoost (XGB). Diese Liste kann und soll aber im Laufe der Arbeit noch erweitert werden. In der Recherechephase der Bachelorarbeit sollen weitere mögliche Algorithmen anhand des aktuellen Forschungsstands ermittelt werden.
+\newline
+Beim Support Vector Machine Algorithmus werden Datenpunkte in einem Vektorraum dargestellt. Es wird versucht möglichst große Hyperebenen zu finden, welche Klassen von Datenpunkten separieren. Beim Klassifizieren neuer Datenpunkte wird dann überprüft auf welcher Seite der Hyperebene dieser Datenpunkt liegt \cite{svm}.
+\newline
+Der Random Forest ist ein Algorithmus bei dem der Datensatz zufällig in mehrer Samples zerteilt wird. Auf jedem dieser Samples wird ein Entscheidungsbaum erstellt und bei der Klassifikation wird der der Durchschnitt der einzelnen Entscheidungen der Entscheidungsbäume ermittelt \cite{rf}.
+\newline
+Der XGBoost Algorithmus ist ein \textit{gradient boosting} verfahren. Hierbei werden Modelle iterativ erweitert um ihre jeweiligen Schwächen auszubauen. Da hierbei auch mit Entscheidungsbäumen gearbeitet wird, ist er eine Erweiterung des Random Forest Algorithmus \cite{xgb}.
+\newline
+Zur Evaluation der Modelle wird der Datensatz in einen Trainingsdatensatz und einen Testdatensatz aufgeteilt. Hier sind Aufteilungen von 80\% als Trainingsdaten und 20\% als Testdaten üblich. Zur Bewertung werden Datenpunkte des Testdatensatzes ausgewertet und die so erhaltenen Werte mit den tatsächlichen Labels verglichen. Diese werden Anhand gebräuchlicher Metriken bewertet. Hierfür üblich sind Mean Squared Error und der R-Score. Mean Squared Error meint hier den durchschnittlichen aufsummierten Quadratischen Fehler. Der R-Score berechnet sich als eins minus der Mean Squared Error geteilt durch die quadratische Standardabweichung \cite{metrics}.  Weitere Metriken zur Bewertung der Modelle sollen im Laufe der Recherchephase ermittelt werden. 
+
+{\let\clearpage\relax \chapter{Vorgehensweise}}
+Der Prozess eine Bachelorarbeit zu verfassen ist aufwendig. Um dieses große Aufgabe sinnvoll anzugehen wird die Arbeit in kleiner Abschnitte unterteilt.
+Die Bearbeitung der Bachelorarbeit soll in einer groben Einteilung fünf Schritte umfassen.
+\newline
+In der Recherchephase soll der aktuelle Forschungsstand ermittelt werden. Außerdem sollen Informationen zur aktuellen Methodik gefunden werden. Für diese Phase ist in etwa einen Monat Zeit eingeplant.
+\newline
+In der zweiten Phase werden die Datensätze begutachtet. Zuerst werden die Datensätze explorativ analysiert. Hier soll die Qualität der Datensätze überprüft werden. Auch Informationen über die einzelnen Felder der Daten müssen gesammelt werden. Dann müssen die beiden Datensätze miteinander Identifiziert werden. Hierbei soll herausgefunden werden welche Stellenausschreibung mit welcher Erwerbsbiografie in Zusammenhang steht. Da die Identifikation nur aufgrund der Betriebe und Zeitpunkte passiert, ist hier besondere Vorsicht geboten. Auch hierbei muss überprüft werden wie gut diese Identifikation funktioniert. Für diese Phase ist auch etwa ein Monat Zeit eingeplant.
+\newline
+Anhand im ersten Schritt recherchierten Methodik sollen nun verschiedene Modelle des maschinellen Lernens anhand der im zweiten Schritt identifizierten Datensätze trainiert werden. Auch müssen verschiedene Parameter der Algorithmen angepasst und optimiert werden. Dafür sind bis zu zwei Monate an Zeit vorgesehen.
+\newline 
+Bei der Evaluierung sollen die verschiedenen im dritten Schritt trainierten Modelle verglichen und bewertet werden. Dies geschieht anhand von Metriken, die bei der Recherche der Methodik im ersten Schritt gefunden wurden. Nun sollen Vor- und Nachtteile der Modelle anhand dieser Metriken gegenübergestellt werden. Dies sollte ungefähr zwei Wochen Zeit in Anspruch nehmen.
+\newline
+In der letzten Phase sollen die in den vorherigen Schritten gewonnenen Erkenntnisse niedergeschrieben werden. Für das Verfassen der Bachelorarbeit sind in etwa ein Monat an Zeit vorgesehen.
+\newline
+Verläuft alles nach Plan sollte die Bachelorarbeit also in etwa fünf Monaten zu schaffen sein.
+
+\backmatter
+
+\cleardoublepage
+
+
+
+\printnoidxglossaries
+  \renewcommand\bibname{Literaturverzeichnis} 
+\bibliography{literatur}
+\bibliographystyle{unsrtdin}
+
+
+\end{document}
