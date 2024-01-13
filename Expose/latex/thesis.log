@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.21)  8 JAN 2024 10:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.21)  13 JAN 2024 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -408,7 +408,7 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 (/usr/local/texlive/2023/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-Package scrhack Info: loading setspace hack on input line 57.
+Package scrhack Info: loading setspace hack on input line 55.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/setspace.hak
 File: setspace.hak 2022/10/12 v3.38 KOMA-Script scrhack part (hacking package s
@@ -827,7 +827,7 @@ esformat
 (scrbook)              and several others to re-configure section
 (scrbook)              headings.
 (scrbook)              Nevertheless, using requested
-(scrbook)              package `titlesec' on input line 63.
+(scrbook)              package `titlesec' on input line 61.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
@@ -880,7 +880,7 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@chunks=\count319
 \LT@p@ftn=\toks45
 )
-Class scrbook Info: longtable captions redefined on input line 64.
+Class scrbook Info: longtable captions redefined on input line 62.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
@@ -912,7 +912,7 @@ Package: ragged2e 2023/02/25 v3.4 ragged2e Package
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
-Package scrhack Info: loading lscape hack on input line 67.
+Package scrhack Info: loading lscape hack on input line 65.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/lscape.hak
 File: lscape.hak 2022/10/12 v3.38 KOMA-Script scrhack part (hacking package lsc
@@ -928,7 +928,7 @@ Package: cite 2015/02/27  v 5.5
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 91.
+(scrhack)             need that hack, on input line 89.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
@@ -1237,7 +1237,7 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
-Package scrhack Info: loading listings hack on input line 96.
+Package scrhack Info: loading listings hack on input line 94.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/listings.hak
 File: listings.hak 2022/10/12 v3.38 KOMA-Script scrhack part (hacking package l
@@ -1277,7 +1277,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 13
-4.
+2.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1285,24 +1285,24 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 (./cover.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1370,7 +1370,7 @@ Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
 F (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-Package hyperref Info: Link coloring ON on input line 134.
+Package hyperref Info: Link coloring ON on input line 132.
  (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -1382,7 +1382,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 134.
+(scrbook)           before \begin{document} on input line 132.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1392,7 +1392,7 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count384
 ))
 \c@lstlisting=\count385
-Package scrhack Info: undefining \float@addtolists on input line 134.
+Package scrhack Info: undefining \float@addtolists on input line 132.
 \openout2 = `cover.aux'.
 
 
@@ -1509,7 +1509,7 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 (scrbook)              that will remove this deprecated code.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
 
  []
 
@@ -1542,11 +1542,11 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 [5] [6]
 
 Package glossaries Warning: \makenoidxglossaries is required to make \printnoid
-xglossary[type={main}] work on input line 213.
+xglossary[type={main}] work on input line 211.
 
 
 Package glossaries Warning: \makenoidxglossaries is required to make \printnoid
-xglossary[type={acronym}] work on input line 213.
+xglossary[type={acronym}] work on input line 211.
 
 (./thesis.bbl
 chapter without number
@@ -1566,63 +1566,63 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 29--37
+Underfull \hbox (badness 10000) in paragraph at lines 11--19
 []\T1/lmr/m/sc/10.95 Olaf Scholz\T1/lmr/m/n/10.95 :  \T1/lmr/m/it/10.95 Zei-ten
 -wen-de - Re-gie-rungs-er-klä-rung in der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--37
+Underfull \hbox (badness 10000) in paragraph at lines 11--19
 \T1/lmr/m/it/10.95 Son-der-sit-zung zum Krieg ge-gen die Ukrai-ne vor dem Deut-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--37
+Underfull \hbox (badness 10000) in paragraph at lines 11--19
 \T1/lmr/m/it/10.95 schen Bun-des-tag\T1/lmr/m/n/10.95 .  [On-li-ne].  [][]$\T1/
 lmtt/m/n/10.95 https : / / www . bundesregierung . de /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--37
+Underfull \hbox (badness 10000) in paragraph at lines 11--19
 \T1/lmtt/m/n/10.95 resource / blob / 992814 / 2131062 / 78d39dda6647d7f835bbe76
 713d30c31 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--37
+Underfull \hbox (badness 10000) in paragraph at lines 11--19
 \T1/lmtt/m/n/10.95 bundeskanzler-[]olaf-[]scholz-[]reden-[]zur-[]zeitenwende-[]
 download-[]bpa-[]data .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--47
-\T1/lmtt/m/n/10.95 arbeitsmarktpolitik / 317004 / die-[]oeffentliche-[]arbeitsv
-ermittlung /
+Underfull \hbox (badness 10000) in paragraph at lines 21--28
+[]\T1/lmr/m/sc/10.95 Paul Stro-bel \T1/lmr/m/n/10.95 ; \T1/lmr/m/sc/10.95 Kon-r
+ad Ade-nau-er Stif-tung \T1/lmr/m/n/10.95 (Hrsg.):  \T1/lmr/m/it/10.95 Die
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--72
-[]\T1/lmr/m/sc/10.95 Bundesministerium für Ar-beit und So-zia-les\T1/lmr/m/n/10
-.95 :  \T1/lmr/m/it/10.95 Stich-pro-
+Underfull \hbox (badness 10000) in paragraph at lines 21--28
+\T1/lmr/m/it/10.95 so-zia-len Me-di-en im Ur-kai-ne Krieg\T1/lmr/m/n/10.95 .  [
+On-li-ne].  [][]$\T1/lmtt/m/n/10.95 https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--72
-\T1/lmr/m/it/10.95 be der In-te-grier-ten Er-werbs-bio-gra-fi-en des IAB\T1/lmr
-/m/n/10.95 .  [On-li-ne].  [][]$\T1/lmtt/m/n/10.95 https :
+Underfull \hbox (badness 10000) in paragraph at lines 21--28
+\T1/lmtt/m/n/10.95 kas . de / de / web / die-[]politische-[]meinung / blog / de
+tail / -[] / content /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--72
-\T1/lmtt/m/n/10.95 / / kooperationen . zew . de / dfgflex / links / datensaetze
--[]deutschland /
+Underfull \hbox (badness 2486) in paragraph at lines 30--37
+[]\T1/lmr/m/sc/10.95 Statista\T1/lmr/m/n/10.95 :  \T1/lmr/m/it/10.95 Num-ber of
+ X (for-mer-ly Tiw-t-ter) users world-wi-de from 2019
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 65--72
-\T1/lmtt/m/n/10.95 stichprobe-[]der-[]integrierten-[]erwerbsbiografien-[]des-[]
-iab-[]iebs$[][]\T1/lmr/m/n/10.95 . --  Zu-
+Underfull \hbox (badness 10000) in paragraph at lines 30--37
+\T1/lmr/m/it/10.95 to 2024\T1/lmr/m/n/10.95 .  [On-li-ne].  [][]$\T1/lmtt/m/n/1
+0.95 https : / / www . statista . com / statistics / 303681 /
  []
 
 [7
@@ -1632,18 +1632,42 @@ iab-[]iebs$[][]\T1/lmr/m/n/10.95 . --  Zu-
 
 
 
-]) [8] (./thesis.aux (./cover.aux))
+]
+Underfull \hbox (badness 10000) in paragraph at lines 84--91
+[]\T1/lmr/m/sc/10.95 Bundesministerium für Ar-beit und So-zia-les\T1/lmr/m/n/10
+.95 :  \T1/lmr/m/it/10.95 Stich-pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--91
+\T1/lmr/m/it/10.95 be der In-te-grier-ten Er-werbs-bio-gra-fi-en des IAB\T1/lmr
+/m/n/10.95 .  [On-li-ne].  [][]$\T1/lmtt/m/n/10.95 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--91
+\T1/lmtt/m/n/10.95 / / kooperationen . zew . de / dfgflex / links / datensaetze
+-[]deutschland /
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 84--91
+\T1/lmtt/m/n/10.95 stichprobe-[]der-[]integrierten-[]erwerbsbiografien-[]des-[]
+iab-[]iebs$[][]\T1/lmr/m/n/10.95 . --  Zu-
+ []
+
+) [8] (./thesis.aux (./cover.aux))
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37162 strings out of 476025
- 737908 string characters out of 5790017
- 1865388 words of memory out of 5000000
- 56894 multiletter control sequences out of 15000+600000
+ 37168 strings out of 476025
+ 738091 string characters out of 5790017
+ 1866388 words of memory out of 5000000
+ 56896 multiletter control sequences out of 15000+600000
  566373 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,106p,10601b,716s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,19n,106p,10601b,712s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/lo
 cal/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/te
@@ -1651,10 +1675,10 @@ xmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fo
 nts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/p
 ublic/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lm
 ri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on thesis.pdf (8 pages, 240522 bytes).
+Output written on thesis.pdf (8 pages, 243680 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
+ 179 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 

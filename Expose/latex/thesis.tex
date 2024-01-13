@@ -18,15 +18,13 @@
 
 
 % details about your thesis
-\newcommand{\titel}{Verknüpfung von Datensätzen über Erwerbsbiographien und Stellenangeboten zum trainieren eines Machine Learning Modells zur Unterstützung bei der Arbeitsvermittlung.}
+\newcommand{\titel}{Topic Modelling on Large Multilingual Twitter Data Set on Ukraine War}
 \newcommand{\artderarbeit}{Expose Bachelorarbeit}  % {Bachelorarbeit,Masterarbeit}
 \newcommand{\autor}{Robin Feldmann}
 \newcommand{\studiengang}{Informatik}  % {Informatik,Wirtschaftsinformatik,Medieninformatik}
 \newcommand{\matrikelnr}{3538270 - Ca. 9000 Zeichen}
-\newcommand{\erstgutachter}{Prof.\,Dr.~Korbinian Riedhammer}
-\newcommand{\zweitgutachter}{Prof.\,Dr.~Bartosz von\,Rymon\,Lipinski}
-\newcommand{\betreuer}{M.Sc.\,~Martina Schmidt}
-\newcommand{\unternehmen}{Institut für Arbeitsmarktforschung}
+\newcommand{\erstgutachter}{Prof.\,Dr.~Kruspe}
+\newcommand{\zweitgutachter}{Prof.\,Dr.~? }
 \newcommand{\logo}{figures/TH-Nuernberg-RGB.png}
 \newcommand{\keywords}{hot, fuzz}
  
@@ -148,19 +146,19 @@
 \tableofcontents
 
 
-{\let\clearpage\relax \chapter{Ausgangslage}}
-Arbeit ist ein zentraler Bestandteil unseres alltäglichen Lebens und unserer Gesellschaft. Folglich führt Arbeitslosigkeit bei Betroffenen zu gravierenden gesundheitlichen und sozialen Nachtteilen. Auch gesamtgesellschaftlich hat Arbeitslosigkeit viele negative Folgen \cite{Bpb}. 
-Die Bundesagentur für Arbeit macht es sich zum Ziel, diese Probleme durch Arbeitsvermittlung zu bekämpfen \cite{BasVors} und schreibt dazu in ihrer Präambel:
-\textit{Die Arbeitsvermittlung ist ein wichtiger Bestandteil der staatlichen Daseinsvorsorge und gehört zum Kern moderner Dienstleistungen am Arbeitsmarkt.} 
-\cite{Bas}. Arbeitsvermittlung meint dabei das Zusammenführen von Informationen über Angebot und Nachfrage der Arbeitsmärkte \cite{Bpbarbeit}.
-\newline
-Dieser Prozess beginnt dabei mit der Erfassung persönlicher Merkmale und Fähigkeiten der Arbeitssuchenden. Im nächsten Schritt werden dem Arbeitssuchenden passend zu seinem Profil Stellenangebote vorgeschlagen \cite{Bas}. Dieser Schritt wird in der Arbeitsmarktökonomik als Matching Prozess bezeichnet. Der Matching Prozess kann als mathematische Abbildung abstrahiert werden. Die Parameter dieser Abbildung sind Informationen sowohl über den Arbeitssuchenden als auch über das Stellenangebot. Der Rückgabewert ist die Wahrscheinlichkeit, dass der Arbeitssuchende in der Stelle arbeiten wird \cite{grandstrand}.
-Für das Schätzen so einer Abbildung im Kontext des Arbeitsmarktmatchings eignen sich Methoden des maschinellen Lernens \cite{mül}.
+{\let\clearpage\relax \chapter{Introduction}}
+The ongoing conflict between Ukraine and Russia represents a paramount challenge in the realm of external politics for both Germany and Europe. This confrontation not only tests diplomatic relations but also significantly influences the geopolitical landscape of the region, underscoring its critical importance \cite{Zeitenwende}. In the context of the Russian-Ukraine War, social media serves a dual role: it acts as a crucial medium for disseminating political opinions and information, and simultaneously, it emerges as a vital source of information relevant to military strategies and operations. \cite{SocialMediaUkraine}.
+Twitter holds a position of exceptional significance in the context of the Russian-Ukraine conflict, underscored by its expansive user base exceeding 350 million in 2022 and 2023 \cite{TwitterUsers}. This platform has previously demonstrated its influential role in shaping discourse around major global events, notably during the Brexit referendum and the COVID-19  pandemic. Its pervasive reach and real-time information dissemination capabilities make it a critical tool for political engagement and public awareness in such high-stake scenarios \cite{ TwitterBrexit, TwitterBrexit2, TwitterCovid, SocialNetworking}.
+Natural Language Processing methods are ideal for extracting structured information, opinions, and facts from large text corpora that are beyond human readability due to their size \cite{Fraunhofer}.
+Especially Topic Modelling is a method that aims to find latent Topics and Structures inside text corpora and to group them in a semantic logical way \cite{TopicModelling}.
+Multilangual Topic Modelling expands this technique to multi lingual text corpora.
 
-{\let\clearpage\relax \chapter{Zielsetzung}}
-Das Ziel der Bachelorarbeit ist im Zuge eines Praktikums beim Institut für Arbeitsmarkt- und Berufsforschung in Zusammenarbeit mit Fr. Sabrina Mühlbauer zwei Datensätze miteinander zu Identifizieren(vgl.\nameref{Methodik}). Dann soll Anhand dieser miteinander identifizierten Datensätze ein Modell des maschinellen Lernens entwickelt werden. Dieser soll es ermöglichen bei der Arbeitsvermittlung für individuelle Arbeitssuchende anhand von Informationen über deren Lebenslauf und Qualifikation offene Arbeitsstellen daraufhin zu bewerten, wie gut sie zum Arbeitssuchenden passen. 
+{\let\clearpage\relax \chapter{Objective}}
+This thesis aims to critically evaluate the effectiveness of contemporary multilingual topic modeling techniques in extracting meaningful insights from extensive multilingual Twitter datasets, specifically focusing on the discourse surrounding the Russian-Ukraine war. It seeks to determine whether these advanced computational methods are adept at navigating the complexities and nuances inherent in large-scale, multilingual social media data, thereby offering a robust tool for understanding the dynamics of digital communication in the context of international conflicts.
 
-{\let\clearpage\relax \chapter{Forschungsstand}}
+To achieve this objective, the thesis will first process and analyze a substantial multilingual Twitter dataset obtained from Kaggle, focusing on content related to the Russian-Ukraine conflict. Subsequently, it will provide a comprehensive overview of the current developments in multilingual topic modeling, highlighting the advancements and challenges in this field. Finally, the study will apply suitable multilingual topic modeling techniques to the dataset, aiming to effectively discern and interpret the patterns and themes that emerge from this complex digital discourse.
+
+{\let\clearpage\relax \chapter{State of Research}}
 Die Arbeit wird im Zuge eines Praktikums beim Institut für Arbeitsmarkt- und Berufsforschung unter der Betreuung von Fr. Sabrina Mühlbauer verfasst. Diese Arbeit soll auf der Veröffentlichung \textit{Machine Learning for Labour Market Matching} aufbauen\cite{mül}. In dieser Arbeit wird ein Ansatz beschrieben anhand von statistischen Methoden und Methoden des maschinellen Lernens Arbeitssuchende bei der Auswahl des zukünftigen Berufsfelds zu unterstützen. Hierfür wird ein Datensatz über Berufsbiographien verwendet um anhand der Berufshistorie einer Person Aussagen über das zukünftige Berufsfeld treffen zu können. Hierbei wird die Effektivität von statistischen Methoden mit dem Random Forest und dem K-Nearest-Neighbours Algorithmus verglichen. Fr. Mühlbauer kommt zu dem Ergebnis, dass der Random Forest Algorithmus hierfür am besten geeignet ist \cite{mül}. In anderen Veröffentlichungen werden auch sogenannte \textit{Learning to Rank} Ansätze untersucht, um bei Online Jobbörsen Vorschläge für Arbeitssuchende zu bewerten \cite{hiri}.
 Es soll für einen Arbeitssuchenden ermittelt werden, in wie fern ein spezifisches Jobangebot zu diesem passt um so Arbeitsvermittler bei der Auswahl von Jobvorschlägen zu unterstützen. Außerdem soll mit dem XGBoost Algorithmus eine Verbesserung des Random Forest getestet und evaluiert werden.
 \newline
