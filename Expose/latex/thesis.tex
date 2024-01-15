@@ -22,7 +22,7 @@
 \newcommand{\artderarbeit}{Expose Bachelorarbeit}  % {Bachelorarbeit,Masterarbeit}
 \newcommand{\autor}{Robin Feldmann}
 \newcommand{\studiengang}{Informatik}  % {Informatik,Wirtschaftsinformatik,Medieninformatik}
-\newcommand{\matrikelnr}{3538270 - Ca. 9000 Zeichen}
+\newcommand{\matrikelnr}{3538270}
 \newcommand{\erstgutachter}{Prof.\,Dr.~Kruspe}
 \newcommand{\zweitgutachter}{Prof.\,Dr.~? }
 \newcommand{\logo}{figures/TH-Nuernberg-RGB.png}
@@ -159,48 +159,31 @@ This thesis aims to critically evaluate the effectiveness of contemporary multil
 To achieve this objective, the thesis will first process and analyze a substantial multilingual Twitter dataset obtained from Kaggle, focusing on content related to the Russian-Ukraine conflict. Subsequently, it will provide a comprehensive overview of the current developments in multilingual topic modeling, highlighting the advancements and challenges in this field. Finally, the study will apply suitable multilingual topic modeling techniques to the dataset, aiming to effectively discern and interpret the patterns and themes that emerge from this complex digital discourse.
 
 {\let\clearpage\relax \chapter{State of Research}}
+
 Maathuis and Karkhof's study utilizes Latent Dirichlet Allocation and Non-Negative Matrix Factorization, coupled with Kullback-Leibler Divergence, to analyze a Telegram-sourced dataset on the Ukraine war, revealing key themes and patterns in digital communication.
 In their initial approach, Maathuis and Karkhof analyzed the first two months of the Ukraine war using fewer than 10,000 messages, later expanding their study to cover the first six months with an extended dataset of fewer than 50,000 messages \cite{TopicModellingTelegram1,TopicModellingTelegram2}. 
 Sazzed employs Latent Dirichlet Allocation and BERTopic to analyze approximately 80,000 tweets, subsequently integrating these findings with sentiment analysis for a comprehensive understanding of public discourse \cite{TopicTwitterLDABERt}. 
-Nayak, JVN, and Bhagat apply Latent Dirichlet Allocation to scrutinize about 1,200 articles from news websites, focusing on the textual analysis of the Ukraine-Russian war \cite{SocialMediaanalysis}.
+Nayak, JVN, and Bhagat apply Latent Dirichlet Allocation to scrutinize about 1,200 articles from news websites, focusing on the textual analysis of the Ukraine-Russian war \cite{TopicModelingconflig}.
+Sufi uses Latent Dirichlet Allocation on a dataset of 40,000 tweets in 54 languages, pre-processing the data with translations to ensure a cohesive analytical approach \cite{SocialMediaanalysis}.
+In her Bachelor thesis, Becker applies Latent Dirichlet Allocation to a Kaggle dataset identical to mine, comprising approximately 70 million tweets, employing a focused approach by segmenting the data into small time intervals and language-specific subsets \cite{Ivanna}.
+To the best of my knowledge, there have been no studies yet that utilize multilingual topic modeling techniques on extensive multilingual social media datasets to analyze the Ukraine-Russian war.
 
 
+{\let\clearpage\relax \chapter{Data Set}}
+The dataset utilized in this study is publicly accessible on Kaggle, a widely recognized platform for data sharing and analysis. ''Kaggle is an online community for data science and machine learning (ML) enthusiasts. It is a top learning tool for novices and pros, with realistic practice problems to sharpen your data science skills.
+Owned by Google, it is currently the world’s largest crowdsourced web platform for data scientists and ML practitioners. Thus, Kaggle gives you access to several professionals in your field that you can brainstorm, compete, and solve real-life problems with''\cite{Kaggle}.
+The dataset, compiled by the user BwandoWando, for whom limited information is available \cite{bwandowando}, was specifically gathered to monitor the ongoing Ukraine-Russia conflict through filtering for Twitter hashtags.
+It encompasses a total of around 70 million tweets, spanning from the first date of February 24, 2022, to the last date of June 14, 2023, covering 476 unique dates. The dataset spans 66 languages, with the most prevalent being English, German, French, Italian, Spanish, Ukrainian, and Russian, collectively accounting for approximately 86\% of all tweets. A comprehensive explorative analysis of this dataset will be a part of the thesis, delving into detailed aspects and patterns within the data.
 
+{\let\clearpage\relax \chapter{Preprocessing}}
+In the preprocessing section of the thesis, the dataset will undergo a comprehensive exploration, cleaning, and preprocessing process. This will be conducted in accordance with the methods outlined in ''Blueprints for Text Analytics Using Python,'' a seminal work in the field. Additionally, the principles and techniques from Professor Albrecht's lecture on Natural Language Processing will be integrated into these processes. This dual approach ensures a robust and thorough preparation of the dataset, laying a solid foundation for subsequent analysis \cite{Albrecht}.
+To address duplicates in the dataset, particularly retweets and similar entries within specific timespans, a Min-Hash technique will be employed for deduplication. This method is especially effective in noisy data scenarios, ensuring efficient removal of duplicates and maintaining the dataset's integrity for more accurate analysis \cite{Dedupl}.
+For the purpose of testing, a sample consisting of 100 tweets per language, per week, from non-English languages will be translated into English. This translation will be accomplished using the free test version of the Google Cloud Translate API. This systematic approach ensures a sample for each language and time period for testing later in the research process \cite{GoogleTranslateApi}.
 
+{\let\clearpage\relax \chapter{Methodology}}
 
-
-
-
-{\let\clearpage\relax \chapter{Methodik}\label{Methodik}}
-Datengrundlage für die Arbeit ist der Datensatz über Integrierte Erwerbsbiografien (IEB) des Instituts für Arbeitsmarkt und Berufsforschung. Dieser Datensatz enthält Erwerbsverläufe aller Personen die in Deutschland seit 1975 sozialversicherungspflichtig beschäftigt war. Er enthält Informationen über Geburtsjahr und Ausbildung, Leistungsbezug und Beschäftigung \cite{ieb}.
-Ein weiterer Datensatz, zu dem zum mir Zeitpunkt dieses Expose noch keine genaueren Informationen erhältlich sind wird historische Daten über offene Stellenangebote beinhalten. In diesem Datensatz wird zu den Stellenangeboten Informationen über deren Erstellungsdatum und Aufslaufdatum, über den Betrieb und in welche Kategorie die Arbeitsstelle fällt, beinhalten. In einem ersten Schritt sollen die Erwerbsbiografien des IEB anhand der Betriebe, der Zeitpunkte und der Art der Beschäftigung mit historischen Stellenangeboten identifiziert werden. Es werden also paare von Datenpunkte erstellt, bei denen sichergestellt ist, dass eine spezifische Arbeitsbiografie eine spezifisches Tätigkeit beinhaltet, die vorher als Jobangebot ausgeschrieben war. Diese Kombination aus zusammengehörigen Erwerbsbiografien und Stellenangeboten wird die Grundlage für das Training eines Algorithmus des maschinellen Lernens bilden.
-
-Da als Vorbereitung bereits passende Verknüpfungen zwischen Informationen über Jobsuchenden aus dem Datensatz über Erwerbsbiographien und Informationen aus dem Datensatz über Stellenangebote hergestellt wurden, handelt es sich um \textit{überwachtes Lernen}. Das Schätzen von Wahrscheinlichkeiten also von reellwertigen Labeln bezeichnet man als Regressionsproblem  \cite{mlfound}. Im Laufe der Arbeit sollen verschiedene Algorithmen des überwachten Lernens zum lösen von Regressionsproblemen verglichen und anhand von vorher definierten Metriken bewertet werden. Zum jetzigen Zeitpunkt ist geplant drei solcher Algorithmen zu vergleichen: Support Vector Machine (SVM), Random Forest (RF) und XGBoost (XGB). Diese Liste kann und soll aber im Laufe der Arbeit noch erweitert werden. In der Recherechephase der Bachelorarbeit sollen weitere mögliche Algorithmen anhand des aktuellen Forschungsstands ermittelt werden.
-\newline
-Beim Support Vector Machine Algorithmus werden Datenpunkte in einem Vektorraum dargestellt. Es wird versucht möglichst große Hyperebenen zu finden, welche Klassen von Datenpunkten separieren. Beim Klassifizieren neuer Datenpunkte wird dann überprüft auf welcher Seite der Hyperebene dieser Datenpunkt liegt \cite{svm}.
-\newline
-Der Random Forest ist ein Algorithmus bei dem der Datensatz zufällig in mehrer Samples zerteilt wird. Auf jedem dieser Samples wird ein Entscheidungsbaum erstellt und bei der Klassifikation wird der der Durchschnitt der einzelnen Entscheidungen der Entscheidungsbäume ermittelt \cite{rf}.
-\newline
-Der XGBoost Algorithmus ist ein \textit{gradient boosting} verfahren. Hierbei werden Modelle iterativ erweitert um ihre jeweiligen Schwächen auszubauen. Da hierbei auch mit Entscheidungsbäumen gearbeitet wird, ist er eine Erweiterung des Random Forest Algorithmus \cite{xgb}.
-\newline
-Zur Evaluation der Modelle wird der Datensatz in einen Trainingsdatensatz und einen Testdatensatz aufgeteilt. Hier sind Aufteilungen von 80\% als Trainingsdaten und 20\% als Testdaten üblich. Zur Bewertung werden Datenpunkte des Testdatensatzes ausgewertet und die so erhaltenen Werte mit den tatsächlichen Labels verglichen. Diese werden Anhand gebräuchlicher Metriken bewertet. Hierfür üblich sind Mean Squared Error und der R-Score. Mean Squared Error meint hier den durchschnittlichen aufsummierten Quadratischen Fehler. Der R-Score berechnet sich als eins minus der Mean Squared Error geteilt durch die quadratische Standardabweichung \cite{metrics}.  Weitere Metriken zur Bewertung der Modelle sollen im Laufe der Recherchephase ermittelt werden. 
-
-{\let\clearpage\relax \chapter{Vorgehensweise}}
-Der Prozess eine Bachelorarbeit zu verfassen ist aufwendig. Um dieses große Aufgabe sinnvoll anzugehen wird die Arbeit in kleiner Abschnitte unterteilt.
-Die Bearbeitung der Bachelorarbeit soll in einer groben Einteilung fünf Schritte umfassen.
-\newline
-In der Recherchephase soll der aktuelle Forschungsstand ermittelt werden. Außerdem sollen Informationen zur aktuellen Methodik gefunden werden. Für diese Phase ist in etwa einen Monat Zeit eingeplant.
-\newline
-In der zweiten Phase werden die Datensätze begutachtet. Zuerst werden die Datensätze explorativ analysiert. Hier soll die Qualität der Datensätze überprüft werden. Auch Informationen über die einzelnen Felder der Daten müssen gesammelt werden. Dann müssen die beiden Datensätze miteinander Identifiziert werden. Hierbei soll herausgefunden werden welche Stellenausschreibung mit welcher Erwerbsbiografie in Zusammenhang steht. Da die Identifikation nur aufgrund der Betriebe und Zeitpunkte passiert, ist hier besondere Vorsicht geboten. Auch hierbei muss überprüft werden wie gut diese Identifikation funktioniert. Für diese Phase ist auch etwa ein Monat Zeit eingeplant.
-\newline
-Anhand im ersten Schritt recherchierten Methodik sollen nun verschiedene Modelle des maschinellen Lernens anhand der im zweiten Schritt identifizierten Datensätze trainiert werden. Auch müssen verschiedene Parameter der Algorithmen angepasst und optimiert werden. Dafür sind bis zu zwei Monate an Zeit vorgesehen.
-\newline 
-Bei der Evaluierung sollen die verschiedenen im dritten Schritt trainierten Modelle verglichen und bewertet werden. Dies geschieht anhand von Metriken, die bei der Recherche der Methodik im ersten Schritt gefunden wurden. Nun sollen Vor- und Nachtteile der Modelle anhand dieser Metriken gegenübergestellt werden. Dies sollte ungefähr zwei Wochen Zeit in Anspruch nehmen.
-\newline
-In der letzten Phase sollen die in den vorherigen Schritten gewonnenen Erkenntnisse niedergeschrieben werden. Für das Verfassen der Bachelorarbeit sind in etwa ein Monat an Zeit vorgesehen.
-\newline
-Verläuft alles nach Plan sollte die Bachelorarbeit also in etwa fünf Monaten zu schaffen sein.
-
+The topic modeling component of this research will be conducted in three distinct steps, each focusing on a specific subset of the data. For the initial case study, I will manually select 100 tweets, distributed evenly across four self-chosen topics, amounting to 25 tweets per topic. This curated dataset will serve as the basis for comparing results from various topic modeling approaches. The first method involves applying Latent Dirichlet Allocation (LDA) \cite{LDA} to the English translations of these tweets. Additionally, the BertTopic \cite{BERTopic} algorithm will be employed, incorporating different embedding models to analyze the data.
+The evaluation of this case study will be methodically conducted in three stages to ensure a thorough analysis of the topic modeling outcomes. The first stage involves a subjective assessment, where the relevance and appeal of the identified topics will be evaluated from a human perspective. In the second stage, the results of the topic modeling will be compared against the topics I have pre-selected by hand. This comparison aims to measure the alignment between the machine-generated topics and the manually chosen ones. The third and final stage of evaluation employs established metrics for topic models: Coherence, measured using Normalized Pointwise Mutual Information (NPMI)\cite{npmi} and Diversity, determined by calculating the percentage of unique words per topic \cite{diversity}. These metrics provide an objective and quantitative analysis of the model's performance, ensuring a comprehensive evaluation of its effectiveness in topic identification and differentiation.
 \backmatter
 
 \cleardoublepage

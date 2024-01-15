@@ -9,6 +9,3 @@ from tqdm.auto import tqdm
 from src.SampleTranslation05.translation_01 import load_samples
 tqdm.pandas()
 #model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
-
-
-print("hello")

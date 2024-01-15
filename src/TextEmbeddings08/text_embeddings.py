@@ -32,7 +32,7 @@ def visualise_with_dimensional_reduction(df: pd.DataFrame, model: any= PCA(n_com
 def visualise_with_mvu_reduction(df: pd.DataFrame, row_to_transform: str="embeddings", hover_data: list[str]=['sentence'], color_to_show: str= None ,k =2) -> None:
 
     model = MaximumVarianceUnfolding()
-    min_embeddings = (model.fit_transform(np.array(df[row_to_transform].to_list()), dim=2 , k=k))
+    min_embeddings = model.fit_transform(np.array(df[row_to_transform].to_list()), dim=2 , k=k)
     x = min_embeddings[:,0]
     y = min_embeddings[:,1]
 

@@ -31,6 +31,8 @@ Zusammenfassung der gelesenen Paper in RUWNLP:
 
 
 10 (BertTopic, LDA twitter ) ~80000   (Sazzed, TopicTwitterLDABERt)
+
+
 11 LDA (news websites) < 1200 News articles  (Nayak, JVN, Bhagat TopicModelingconflig, )
 2 LDA (twitter) <40000  (Sufi, SocialMediaanalysis)
 Ivanka (twitter) selber Datensatz (lda) (Ivanna)
@@ -41,7 +43,7 @@ Ivanka (twitter) selber Datensatz (lda) (Ivanna)
 
 Zusammenfassung der Paper über BertTopic, LDA, SentenceBert, Labse usw.
 
-LDA 1
+LDA 1   (LDA)
 BerTopic (=> HDBSCAN, UMAP )
 Labse
 BertSentenceEmbeddings
