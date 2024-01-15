@@ -27,11 +27,13 @@ Geeignete Techniken des multilingualen Topic Modellings werden dann auf diesem D
 ## 3.1 NLP on RUssian-Ukraine War
 Zusammenfassung der gelesenen Paper in RUWNLP:
 
-6 and 9 doing Topic Analysis and Sentiment Analysis (lda, telegramm data) (Non Negative Matrix factorisation with kullback-leibler divergence )  < 50000
-10 (BertTopic, LDA twitter ) ~80000
-11 LDA (news websites) < 1200 News articles
-2 LDA (twitter) <40000
-Ivanka (twitter) selber Datensatz (lda)
+6 and 9 doing Topic Analysis and Sentiment Analysis (lda, telegramm data) (Non Negative Matrix factorisation with kullback-leibler divergence )  < 50000      (Maathuis, Karkhof, TopicModellingTelegram1, TopicModellingTelegram2)
+
+
+10 (BertTopic, LDA twitter ) ~80000   (Sazzed, TopicTwitterLDABERt)
+11 LDA (news websites) < 1200 News articles  (Nayak, JVN, Bhagat TopicModelingconflig, )
+2 LDA (twitter) <40000  (Sufi, SocialMediaanalysis)
+Ivanka (twitter) selber Datensatz (lda) (Ivanna)
 
 => Mein Wissenstand: Keine Multilinguales Topic Modelling über den Ukraine Krieg. Kein Topic Modelling auf so großen Datensätzen bis jetzt.
 
