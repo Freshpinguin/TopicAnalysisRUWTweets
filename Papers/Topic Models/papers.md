@@ -117,6 +117,15 @@ Fanggxiaoyu Feng, Yinfei Yang, Daniel Cer, Naveen Arivazhag, Wei Wang
 Google AI, Mountain View
 08.03.2022
 
+## [7] RoBERTa: A Robustly Optimized BERT Pretraining Approach
+
+Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, Veselin Stoyanov
+
+26.07.2019
+
+Improving the quality of Bert by increasing pretraining data and optimising hyperparams.
+
+
 ## [9] Normalized (Pointwise) Mutual Information in Collocation Extraction
 
 Gerlof Bouma

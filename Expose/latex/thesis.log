@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.21)  15 JAN 2024 14:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.21)  17 JAN 2024 11:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1521,18 +1521,6 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 (scrbook)              KOMA-Script and will not work with a coming version,
 (scrbook)              that will remove this deprecated code.
 
-chapter without number
-
-Class scrbook Warning: Redefinition of \@makechapterhead detected.
-(scrbook)              Note: KOMA-Script does use styles for commands like
-(scrbook)              \chapter. Currently it internally still provides and
-(scrbook)              uses \@makechapterhead, but a completely different
-(scrbook)              definition compared to the standard classes.
-(scrbook)              So redefining or using internal \@makechapterhead
-(scrbook)              by users or package authors may already break
-(scrbook)              KOMA-Script and will not work with a coming version,
-(scrbook)              that will remove this deprecated code.
-
 [4]
 chapter without number
 
@@ -1546,14 +1534,39 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 (scrbook)              KOMA-Script and will not work with a coming version,
 (scrbook)              that will remove this deprecated code.
 
-[5] [6]
+[5]
+chapter without number
+
+Class scrbook Warning: Redefinition of \@makechapterhead detected.
+(scrbook)              Note: KOMA-Script does use styles for commands like
+(scrbook)              \chapter. Currently it internally still provides and
+(scrbook)              uses \@makechapterhead, but a completely different
+(scrbook)              definition compared to the standard classes.
+(scrbook)              So redefining or using internal \@makechapterhead
+(scrbook)              by users or package authors may already break
+(scrbook)              KOMA-Script and will not work with a coming version,
+(scrbook)              that will remove this deprecated code.
+
+chapter without number
+
+Class scrbook Warning: Redefinition of \@makechapterhead detected.
+(scrbook)              Note: KOMA-Script does use styles for commands like
+(scrbook)              \chapter. Currently it internally still provides and
+(scrbook)              uses \@makechapterhead, but a completely different
+(scrbook)              definition compared to the standard classes.
+(scrbook)              So redefining or using internal \@makechapterhead
+(scrbook)              by users or package authors may already break
+(scrbook)              KOMA-Script and will not work with a coming version,
+(scrbook)              that will remove this deprecated code.
+
+[6] [7]
 
 Package glossaries Warning: \makenoidxglossaries is required to make \printnoid
-xglossary[type={main}] work on input line 193.
+xglossary[type={main}] work on input line 209.
 
 
 Package glossaries Warning: \makenoidxglossaries is required to make \printnoid
-xglossary[type={acronym}] work on input line 193.
+xglossary[type={acronym}] work on input line 209.
 
 (./thesis.bbl
 chapter without number
@@ -1632,7 +1645,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--37
 0.95 https : / / www . statista . com / statistics / 303681 /
  []
 
-[7
+[8
 
 
 
@@ -1640,31 +1653,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--37
 
 
 ]
-Underfull \hbox (badness 2600) in paragraph at lines 118--124
+Underfull \hbox (badness 7832) in paragraph at lines 137--142
+[] \T1/lmr/m/n/10.95 ;  (Hrsg.):  \T1/lmr/m/it/10.95 Hug-ging-Face\T1/lmr/m/n/1
+0.95 .  [On-li-ne].  [][]$\T1/lmtt/m/n/10.95 https : / / huggingface . co /
+ []
+
+[9]
+Underfull \hbox (badness 2600) in paragraph at lines 163--169
 []\T1/lmr/m/sc/10.95 BwandoWando\T1/lmr/m/n/10.95 :  \T1/lmr/m/it/10.95 Bwan-do
 -Wan-do\T1/lmr/m/n/10.95 .  [On-li-ne].  [][]$\T1/lmtt/m/n/10.95 https : / / ww
 w . kaggle . com /
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 136--142
+Underfull \hbox (badness 1454) in paragraph at lines 181--187
 []\T1/lmr/m/sc/10.95 Google\T1/lmr/m/n/10.95 :  \T1/lmr/m/it/10.95 Cloud Trans-
 la-te API\T1/lmr/m/n/10.95 .  [On-li-ne].  [][]$\T1/lmtt/m/n/10.95 https : / / 
 cloud . google . com /
  []
 
-[8]) [9] (./thesis.aux (./cover.aux))
+) [10] (./thesis.aux (./cover.aux))
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37184 strings out of 476025
- 738445 string characters out of 5790017
+ 37199 strings out of 476025
+ 738601 string characters out of 5790017
  1866388 words of memory out of 5000000
- 56903 multiletter control sequences out of 15000+600000
+ 56910 multiletter control sequences out of 15000+600000
  566373 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,106p,10601b,714s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,19n,106p,10601b,716s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/lo
 cal/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/te
@@ -1672,10 +1691,10 @@ xmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fo
 nts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/p
 ublic/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lm
 ri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on thesis.pdf (9 pages, 244905 bytes).
+Output written on thesis.pdf (10 pages, 251163 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
