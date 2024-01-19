@@ -3,11 +3,10 @@
 1. Introduction
 2. Objective
 3. State of Research
-3. 1. NLP on Russian-Ukraine War
-3. 2. Multilingual Topic Modelling
-4. Starting Point
-5. Methodology
-6. Schedule
+4. Technology
+5. Data Set
+6. Methodology
+
 
 
 
@@ -24,7 +23,7 @@ Hierfür wird ein großer mehrsprachiger Twitter Datensatz von Kaggle [Link sieh
 Hierfür muss ein Überblick über die aktuellen Entwicklungen des (multilingualen) Topic Modellings gegeben werden.
 Geeignete Techniken des multilingualen Topic Modellings werden dann auf diesem Datensatz angewandt und die Ergebnisse bewertet.
 
-## 3.1 NLP on RUssian-Ukraine War
+## 3 State of Research
 Zusammenfassung der gelesenen Paper in RUWNLP:
 
 6 and 9 doing Topic Analysis and Sentiment Analysis (lda, telegramm data) (Non Negative Matrix factorisation with kullback-leibler divergence )  < 50000      (Maathuis, Karkhof, TopicModellingTelegram1, TopicModellingTelegram2)
@@ -39,8 +38,7 @@ Ivanka (twitter) selber Datensatz (lda) (Ivanna)
 
 => Mein Wissenstand: Keine Multilinguales Topic Modelling über den Ukraine Krieg. Kein Topic Modelling auf so großen Datensätzen bis jetzt.
 
-## 3.2 Multilangual Topic Modelling
-
+## 4 Technology
 Zusammenfassung der Paper über BertTopic, LDA, SentenceBert, Labse usw.
 
 LDA 1   (LDA)

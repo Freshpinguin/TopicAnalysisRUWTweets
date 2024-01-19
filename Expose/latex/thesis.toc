@@ -6,5 +6,6 @@
 \contentsline {chapter}{\nonumberline Data Set}{5}{chapter*.6}%
 \contentsline {chapter}{\nonumberline Preprocessing}{6}{chapter*.7}%
 \contentsline {chapter}{\nonumberline Methodology}{6}{chapter*.8}%
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{8}{chapter*.9}%
+\contentsline {chapter}{\nonumberline Reference Tools}{7}{chapter*.9}%
+\contentsline {chapter}{\nonumberline References}{8}{chapter*.10}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

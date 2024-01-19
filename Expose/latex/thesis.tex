@@ -18,7 +18,7 @@
 
 
 % details about your thesis
-\newcommand{\titel}{Topic Modelling on Large Multilingual Twitter Data Set on Ukraine War}
+\newcommand{\titel}{Multilingual Topic Analysis of Extensive Twitter Data Related to the Ukraine Conflict}
 \newcommand{\artderarbeit}{Expose Bachelorarbeit}  % {Bachelorarbeit,Masterarbeit}
 \newcommand{\autor}{Robin Feldmann}
 \newcommand{\studiengang}{Informatik}  % {Informatik,Wirtschaftsinformatik,Medieninformatik}
@@ -147,20 +147,20 @@
 
 
 {\let\clearpage\relax \chapter{Introduction}}
-The ongoing conflict between Ukraine and Russia represents a paramount challenge in the realm of external politics for both Germany and Europe. This confrontation not only tests diplomatic relations but also significantly influences the geopolitical landscape of the region, underscoring its critical importance \cite{Zeitenwende}. In the context of the Russian-Ukraine War, social media serves a dual role: it acts as a crucial medium for disseminating political opinions and information, and simultaneously, it emerges as a vital source of information relevant to military strategies and operations. \cite{SocialMediaUkraine}.
-Twitter holds a position of exceptional significance in this context, underscored by its expansive user base exceeding 350 million in 2022 and 2023 \cite{TwitterUsers}. This platform has previously demonstrated its influential role in shaping discourse around major global events, notably during the Brexit referendum and the COVID-19  pandemic. Its pervasive reach and real-time information dissemination capabilities make it a critical tool for political engagement and public awareness in such high-stake scenarios \cite{ TwitterBrexit, TwitterBrexit2, TwitterCovid, SocialNetworking}.
+The ongoing conflict between Ukraine and Russia represents a paramount challenge in the realm of external politics for both Germany and Europe. This confrontation not only tests diplomatic relations but also significantly influences the geopolitical landscape of the region, underscoring its critical importance \cite{Zeitenwende}. In the context of the Russia-Ukraine War, social media serves a dual role: it acts as a crucial medium for disseminating political opinions and information, and simultaneously, it emerges as a vital source of information relevant to military strategies and operations. \cite{SocialMediaUkraine}.
+Twitter holds a position of exceptional significance in this context, highlighted by its expansive user base exceeding 350 million in 2022 and 2023 \cite{TwitterUsers}. This platform has previously demonstrated its influential role in shaping discourse around major global events, notably during the Brexit referendum and the COVID-19  pandemic. Its pervasive reach and real-time information dissemination capabilities make it a critical tool for political engagement and public awareness in such high-stake scenarios \cite{ TwitterBrexit, TwitterBrexit2, TwitterCovid, SocialNetworking}.
 Natural Language Processing methods are particularly effective for analyzing large datasets of tweets, where the sheer volume of data renders manual reading unfeasible. These techniques enable the extraction of structured information, opinions, and factual insights from these extensive text corpora, transforming vast digital conversations into comprehensible data.\cite{Fraunhofer}.
 Especially Topic Modelling is a method that aims to find latent Topics and Structures inside text corpora and to group them in a semantic logical way \cite{TopicModelling}.
-Multilangual Topic Modelling expands this technique to multi lingual text corpora.
+Multilangual Topic Modelling expands this technique to multilingual text corpora.
 
 {\let\clearpage\relax \chapter{Objective}}
-This thesis aims to critically evaluate the effectiveness of contemporary multilingual topic modeling techniques in extracting meaningful insights from extensive multilingual Twitter datasets, specifically focusing on the discourse surrounding the Russian-Ukraine war. It seeks to determine whether these methods are adept at navigating the complexities and nuances inherent in large-scale, multilingual social media data, thereby offering a robust tool for understanding the dynamics of digital communication in the context of international conflicts.
+This thesis aims to critically evaluate the effectiveness of contemporary multilingual topic modeling techniques in extracting meaningful insights from extensive multilingual Twitter datasets, specifically focusing on the discourse surrounding the Russia-Ukraine War. It seeks to determine whether these methods are adept at navigating the complexities and nuances inherent in large-scale, multilingual social media data, thereby offering a robust tool for understanding the dynamics of digital communication in the context of international conflicts.
 
 To achieve this objective, the thesis will first process and analyze a substantial multilingual Twitter dataset obtained from Kaggle, focusing on content related to the Russian-Ukraine conflict. Subsequently, it will provide a comprehensive overview of the current developments in multilingual topic modeling, highlighting the advancements and challenges in this field. Finally, the study will apply suitable multilingual topic modeling techniques to the dataset, aiming to effectively discern and interpret the patterns and themes that emerge from this complex digital discourse.
 
 {\let\clearpage\relax \chapter{State of Research}}
 
-Maathuis and Karkhof's study utilizes Latent Dirichlet Allocation and Non-Negative Matrix Factorization, coupled with Kullback-Leibler Divergence, to analyze a Telegram-sourced dataset on the Ukraine war, revealing key themes and patterns in digital communication.
+Maathuis's and Karkhof's study utilizes Latent Dirichlet Allocation and Non-Negative Matrix Factorization, coupled with Kullback-Leibler Divergence, to analyze a Telegram-sourced dataset on the Ukraine war, revealing key themes and patterns in digital communication.
 In their initial approach, Maathuis and Karkhof analyzed the first two months of the Ukraine war using fewer than 10,000 messages, later expanding their study to cover the first six months with an extended dataset of fewer than 50,000 messages \cite{TopicModellingTelegram1,TopicModellingTelegram2}. 
 Sazzed employs Latent Dirichlet Allocation and BERTopic to analyze approximately 80,000 tweets, subsequently integrating these findings with sentiment analysis for a comprehensive understanding of public discourse \cite{TopicTwitterLDABERt}. 
 Nayak, JVN, and Bhagat apply Latent Dirichlet Allocation to scrutinize about 1,200 articles from news websites, focusing on the textual analysis of the Ukraine-Russian war \cite{TopicModelingconflig}.
@@ -176,7 +176,7 @@ Latent Dirichlet Allocation (LDA)  \cite{LDA} has emerged as a leading probabili
 
 The primary topic modeling approach examined in this thesis is based on the BertTopic Framework, a versatile and modular framework consisting of four distinct, interchangeable steps. The initial step involves a Text Embedding model, which embeds the text into a high-dimensional vector space. This is followed by a dimensionality reduction algorithm that simplifies these vector representations. The third step clusters the reduced vectors to form distinct topics. Finally, the fourth step involves generating representations of these topics, characterizing each topic within the dataset \cite{BERTopic}.
 For the embedding step the thesis will utilize and evaluate two models for the text embedding algorithm, both grounded in Sentence-Bert (SBert) Sentence Embeddings using Siamese BERT-Networks \cite{SentenceBERT}. The first model is based on the RoBERTa improvement, known for its enhanced training techniques and optimized performance \cite{RoBERTa}. The second model employs Language-agnostic BERT Sentence Embedding (LABSE) \cite{Labse}. Both of these models are freely accessible on the Hugging Face website \cite{HuggingFace}.
-In the BertTopic Framework, dimensionality reduction is defaultly achieved using the UMAP algorithm, and clustering is conducted through the HDBSCAN algorithm. While exploring alternative algorithms would be intriguing, it falls outside the scope of this thesis, thus these default methods will be retained \cite{UMAP,HDBSCAN}.
+In the BertTopic Framework, dimensionality reduction par default achieved using the UMAP algorithm, and clustering is conducted through the HDBSCAN algorithm. While exploring alternative algorithms would be intriguing, it falls outside the scope of this thesis, thus these default methods will be retained \cite{UMAP,HDBSCAN}.
 
 {\let\clearpage\relax \chapter{Data Set}}
 The dataset utilized in this study is publicly accessible on Kaggle, a widely recognized platform for data sharing and analysis. ''Kaggle is an online community for data science and machine learning (ML) enthusiasts. It is a top learning tool for novices and pros, with realistic practice problems to sharpen your data science skills.
@@ -187,18 +187,24 @@ It encompasses a total of around 70 million tweets, spanning from the first date
 {\let\clearpage\relax \chapter{Preprocessing}}
 In the preprocessing section of the thesis, the dataset will undergo a comprehensive exploration, cleaning, and preprocessing process. This will be conducted in accordance with the methods outlined in ''Blueprints for Text Analytics Using Python''. Additionally, the principles and techniques from Professor Albrecht's lecture on Natural Language Processing will be integrated into these processes \cite{Albrecht}.
 To address duplicates in the dataset, particularly retweets and similar entries within specific timespans, a Min-Hash Algorithm will be employed for noisy deduplication \cite{Dedupl}.
-For the purpose of testing, a sample consisting of 100 tweets per language, per week, from non-English languages will be translated into English. This translation will be accomplished using the free test version of the Google Cloud Translate API. This systematic approach ensures a sample for each language and time period for testing later in the research process \cite{GoogleTranslateApi}.
+For the purpose of testing, a sample consisting of 100 tweets per language, per week, from non-English languages will be translated into English. This translation will be accomplished using the free test version of the Google Cloud Translate API  \cite{GoogleTranslateApi}.
 
 {\let\clearpage\relax \chapter{Methodology}}
 
-The topic modeling component of this research will be conducted in three distinct steps, each focusing on a specific subset of the data. For the initial case study, I will manually select 100 tweets, distributed evenly across four self-chosen topics, amounting to 25 tweets per topic. This curated dataset will serve as the basis for comparing results from various topic modeling approaches. The first method involves applying Latent Dirichlet Allocation (LDA) \cite{LDA} to the English translations of these tweets. Additionally, the BertTopic \cite{BERTopic} algorithm will be employed, incorporating different embedding models to analyze the data.
+The topic modeling component of this research will be conducted in three distinct steps, each focusing on a specific subset of the data. For the initial case study, 100 tweets will be selected manually, distributed evenly across four self-chosen topics, amounting to 25 tweets per topic. This curated dataset will serve as the basis for comparing results from various topic modeling approaches. The first method involves applying Latent Dirichlet Allocation (LDA) \cite{LDA} to the English translations of these tweets. Additionally, the BertTopic \cite{BERTopic} algorithm will be employed, incorporating different embedding models to analyze the data.
 The evaluation of this case study will be methodically conducted in three stages to ensure a thorough analysis of the topic modeling outcomes. The first stage involves a subjective assessment, where the relevance and appeal of the identified topics will be evaluated from a human perspective. In the second stage, the results of the topic modeling will be compared against the pre-selected topics. This comparison aims to measure the alignment between the machine-generated topics and the manually chosen ones. The third and final stage of evaluation employs established metrics for topic models: Coherence, measured using Normalized Pointwise Mutual Information (NPMI)\cite{npmi} and Diversity, determined by calculating the percentage of unique words per topic \cite{diversity}. These metrics provide an objective and quantitative analysis of the model's performance, ensuring a comprehensive evaluation of its effectiveness in topic identification and differentiation.
 
 In the subsequent case study, the scope of analysis will significantly expand to encompass all translated tweets, amounting to approximately 49,000 tweets. On those both Latent Dirichlet Allocation (LDA) and BertTopic will be utilized to cluster the data.
-The topics identified through those will be evaluated using subjective assessment, coherence, and diversity metrics. Additionally, a direct comparison between the topics from each method will be conducted to assess their respective clustering performances on the large dataset.
+The topics identified by those will be evaluated using subjective assessment, coherence, and diversity metrics. Additionally, a direct comparison between the topics from each method will be conducted to assess their respective clustering performances on the large dataset.
 
 The outcomes of these two case studies will be instrumental in guiding key decisions and optimizing hyperparameters for the project. Insights gained from the results will inform the best practices for data cleaning and preprocessing, as well as the selection of suitable sentence embedding models and other hyperparameters. Armed with this refined understanding, the final approach will exclusively employ the BertTopic algorithm, applying it to the entire dataset.
 The topics derived from this will be evaluated based on subjective assessments, coherence, and diversity.
+
+{\let\clearpage\relax \chapter{Reference Tools}}
+
+This expose incorporates sentences formulated with the help of ChatGPT-4, based on the information I provided. A new prompt was used for each chapter, and the specifics of these prompts, along with their respective links, will be detailed in the reference section \cite{PromptIntroduction,PromptObjective,PromptStateofResearch,PromptDataSet,PromptMethodology,PromptTechnology}.
+
+
 
 \backmatter
 
@@ -207,7 +213,7 @@ The topics derived from this will be evaluated based on subjective assessments, 
 
 
 \printnoidxglossaries
-  \renewcommand\bibname{Literaturverzeichnis} 
+  \renewcommand\bibname{References} 
 \bibliography{literatur}
 \bibliographystyle{unsrtdin}
 

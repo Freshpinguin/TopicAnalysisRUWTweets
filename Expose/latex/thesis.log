@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.21)  17 JAN 2024 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.21)  19 JAN 2024 10:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1559,14 +1559,27 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 (scrbook)              KOMA-Script and will not work with a coming version,
 (scrbook)              that will remove this deprecated code.
 
-[6] [7]
+[6]
+chapter without number
+
+Class scrbook Warning: Redefinition of \@makechapterhead detected.
+(scrbook)              Note: KOMA-Script does use styles for commands like
+(scrbook)              \chapter. Currently it internally still provides and
+(scrbook)              uses \@makechapterhead, but a completely different
+(scrbook)              definition compared to the standard classes.
+(scrbook)              So redefining or using internal \@makechapterhead
+(scrbook)              by users or package authors may already break
+(scrbook)              KOMA-Script and will not work with a coming version,
+(scrbook)              that will remove this deprecated code.
+
+[7]
 
 Package glossaries Warning: \makenoidxglossaries is required to make \printnoid
-xglossary[type={main}] work on input line 209.
+xglossary[type={main}] work on input line 215.
 
 
 Package glossaries Warning: \makenoidxglossaries is required to make \printnoid
-xglossary[type={acronym}] work on input line 209.
+xglossary[type={acronym}] work on input line 215.
 
 (./thesis.bbl
 chapter without number
@@ -1623,8 +1636,8 @@ ad Ade-nau-er Stif-tung \T1/lmr/m/n/10.95 (Hrsg.):  \T1/lmr/m/it/10.95 Die
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 21--28
-\T1/lmr/m/it/10.95 so-zia-len Me-di-en im Ur-kai-ne Krieg\T1/lmr/m/n/10.95 .  [
-On-li-ne].  [][]$\T1/lmtt/m/n/10.95 https : / / www .
+\T1/lmr/m/it/10.95 so-zia-len Me-di-en im Ukrai-ne Krieg\T1/lmr/m/n/10.95 .  [O
+n-li-ne].  [][]$\T1/lmtt/m/n/10.95 https : / / www .
  []
 
 
@@ -1653,9 +1666,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--37
 
 
 ]
-Underfull \hbox (badness 7832) in paragraph at lines 137--142
-[] \T1/lmr/m/n/10.95 ;  (Hrsg.):  \T1/lmr/m/it/10.95 Hug-ging-Face\T1/lmr/m/n/1
-0.95 .  [On-li-ne].  [][]$\T1/lmtt/m/n/10.95 https : / / huggingface . co /
+Underfull \hbox (badness 7522) in paragraph at lines 137--142
+[]\T1/lmr/m/sc/10.95 HuggingFace\T1/lmr/m/n/10.95 :  \T1/lmr/m/it/10.95 Hug-gin
+g-Face\T1/lmr/m/n/10.95 .  [On-li-ne].  [][]$\T1/lmtt/m/n/10.95 https : / / hug
+gingface . co /
  []
 
 [9]
@@ -1677,13 +1691,13 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37199 strings out of 476025
- 738601 string characters out of 5790017
- 1866388 words of memory out of 5000000
- 56910 multiletter control sequences out of 15000+600000
+ 37213 strings out of 476025
+ 738860 string characters out of 5790017
+ 1867388 words of memory out of 5000000
+ 56917 multiletter control sequences out of 15000+600000
  566373 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,106p,10601b,716s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,19n,106p,10601b,714s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/lo
 cal/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/te
@@ -1691,10 +1705,10 @@ xmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fo
 nts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/p
 ublic/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lm
 ri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on thesis.pdf (10 pages, 251163 bytes).
+Output written on thesis.pdf (10 pages, 254692 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
