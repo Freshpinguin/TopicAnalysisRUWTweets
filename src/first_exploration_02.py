@@ -43,7 +43,27 @@ def aggregate_dataframe(df: pd.DataFrame) -> Dict[str, Any]:
                   MetaDataSchema.DATE:date}
     aggregation = {**dict(zip(languages, lang_counts)), **aggregation, **dict(zip(languages_dupl, lang_dupl_counts))}
     return aggregation
-    
+
+
+def aggregate_dataframe_test(df: pd.DataFrame) -> Dict[str, Any]:
+    """
+    Aggregate DataFrame to check if everything went right.....
+    """
+    df = df[~df.duplicated(subset="text")]
+    df_la = df.groupby("language").count().reset_index()
+    languages = df_la['language'].tolist()
+    lang_counts = df_la['username'].tolist()
+    df['dupl'] = df.duplicated(subset=OrigDataSchema.TEXT) if  OrigDataSchema.IS_RETWEET not in df.columns else df.duplicated(subset=OrigDataSchema.TEXT) | df[OrigDataSchema.IS_RETWEET]
+    languages_dupl = [la + "_dupl" for la in languages]
+    lang_dupl_counts = df.groupby("language")['dupl'].sum().tolist()
+    row_count = df.shape[0]
+    duplicated_count = df['dupl'].sum()
+    date = df.iloc[0][OrigDataSchema.TIMESTAMP][:10]
+    aggregation = {MetaDataSchema.ROWS: row_count,
+                  MetaDataSchema.DUPLICATED: duplicated_count,
+                  MetaDataSchema.DATE:date}
+    aggregation = {**dict(zip(languages, lang_counts)), **aggregation, **dict(zip(languages_dupl, lang_dupl_counts))}
+    return aggregation
 
 def exploration_in_numbers(df_agg: pd.DataFrame) -> None:
     """
@@ -275,12 +295,12 @@ def stackplot_duplicates_over_weeks_multipl(df: pd.DataFrame, languages: np.ndar
         df['weeks'] = df[MetaDataSchema.DATE].apply(pd.to_datetime).apply(lambda x: str(x.year)+ "-" + str(x.week) if len(str(x.week))==2 else str(x.year)+ "-0" + str(x.week))
         
         df_weeks = df.groupby("weeks")[[language,language+"_dupl"]].sum()
-        df_weeks[MetaDataSchema.ROWS] = df_weeks[language] - df_weeks[language+"_dupl"]
+        df_weeks[MetaDataSchema.ROWS+"_"+language] = df_weeks[language] - df_weeks[language+"_dupl"]
         
         
         
         
-        ax[x_ind,y_ind].stackplot(df_weeks.index, [df_weeks[language], df_weeks[language+"_dupl"]],
+        ax[x_ind,y_ind].stackplot(df_weeks.index, [df_weeks[MetaDataSchema.ROWS+"_"+language], df_weeks[language+"_dupl"]],
                      labels=['NOT DUPLICATED', 'DUPLICATED'], alpha=0.8)
         index=["" for _ in range(len(df_weeks.index))] 
         index[::9]=list(df_weeks.index)[::9]

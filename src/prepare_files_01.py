@@ -72,6 +72,7 @@ def print_folder_stats(data_path: str) ->  None:
     print(f"First date: {sorted(os.listdir(data_path))[0]}, Last date: {sorted(os.listdir(data_path))[-1]}")
     files = [os.stat(data_path+"/" + path).st_size/ (1024 * 1024) for path in  os.listdir(data_path)]
     print(f"Average file size: {sum(files)/len(files) :4.4} in mb")
+    print(f"Files size added up: {sum(files)/1024 : 4.4} in gb")
 
 
 import matplotlib.pyplot as plt
