@@ -24,22 +24,22 @@ class TranslateDict:
             return
         self.to_translate.append(word)
 
-    def translate_api(self):
+    def translate_api(self, source_language=""):
         if not self.to_translate:
             return
         
         for i in range(0, len(self.to_translate), 1000):
-            translated = translate_text_multiple(self.to_translate[i:i+1000],source_language="")
+            translated = translate_text_multiple(self.to_translate[i:i+1000],source_language=source_language)
             for word, trans in zip(self.to_translate[i:i+1000], translated):
                 self.dict[word] = trans
 
         with open(self.json_path, 'w') as this:
             this.write(json.dumps(self.dict))
 
-    def batch_translate(self, words:list[str]) -> list[str]:
+    def batch_translate(self, words:list[str], source_language="") -> list[str]:
         for word in words:
             self.look_up(word)
 
-        self.translate_api()
+        self.translate_api(source_language=source_language)
 
         return [self.dict[word] for word in words]

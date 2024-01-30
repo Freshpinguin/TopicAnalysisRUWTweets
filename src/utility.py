@@ -92,7 +92,7 @@ def iterate_language_dataframes(path: str) -> Iterator[tuple[pd.DataFrame, str]]
         csvs = [path + x for x in os.listdir(path) if "csv" in x]
     
         for csv in tqdm(csvs):
-            yield pd.read_csv(csv,  lineterminator='\n'), csv.split("/")[-1]
+            yield pd.read_csv(csv,  lineterminator='\n'), csv.split("/")[-1].split('.')[0]
 
 
 def query_over_all_csvs(lang: str, data_path: str, query_string: str) -> pd.DataFrame:

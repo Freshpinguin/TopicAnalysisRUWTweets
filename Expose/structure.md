@@ -14,6 +14,7 @@
 ## 1. Introduction
 Der Ukraine Krieg ist die wichtigste Außenpolitische Herausforderung Deutschlands und Europas [Olaf Scholz Zeitenwende]. Die Rolle der sozialen Medien im Ukraine Krieg ist enorm. Einerseits als Mittel politischen Einfluss auszuüben, andererseits als potentielle Quelle militärisch relevanter Informationen. [KAS die sozialen Medien...]. Twitter hat hier eine besondere Bedeutung mit über 350 Millionen Nutzern in 2022 und und 2023 [Statista] und großer Bedeutung bei anderen politischen Ereignissen. [twitter brexiit, pandemic]
 
+https://chat.openai.com/share/1fe6e7af-7b16-4dda-ae14-adbf41e77087
 ## 2. Objective
 Frage:
 
@@ -22,6 +23,8 @@ Sind moderne Techniken des multilingualen Topic Modellings geeignet, um aus gro�
 Hierfür wird ein großer mehrsprachiger Twitter Datensatz von Kaggle [Link siehe Notebook] analysiert und aufbereitet.
 Hierfür muss ein Überblick über die aktuellen Entwicklungen des (multilingualen) Topic Modellings gegeben werden.
 Geeignete Techniken des multilingualen Topic Modellings werden dann auf diesem Datensatz angewandt und die Ergebnisse bewertet.
+
+https://chat.openai.com/share/c12195fd-59fe-43b6-8516-9d564487f0e8
 
 ## 3 State of Research
 Zusammenfassung der gelesenen Paper in RUWNLP:
@@ -37,6 +40,8 @@ Zusammenfassung der gelesenen Paper in RUWNLP:
 Ivanka (twitter) selber Datensatz (lda) (Ivanna)
 
 => Mein Wissenstand: Keine Multilinguales Topic Modelling über den Ukraine Krieg. Kein Topic Modelling auf so großen Datensätzen bis jetzt.
+
+https://chat.openai.com/share/b2b43b8b-2be0-4f83-b337-26f3407d4ec7
 
 ## 4 Technology
 Zusammenfassung der Paper über BertTopic, LDA, SentenceBert, Labse usw.
@@ -56,7 +61,7 @@ Wordclouds, Top N Words....
 Coherence: NPMI
 Diversity: [10] Topocmodellingembedd....
 
-
+https://chat.openai.com/share/e5b049da-2ae8-4dc4-b8cf-7d9d5e3a66ea
 ## 4. Data Set
 
 The dataset was downloaded from the online platform [Kaggle](https://www.kaggle.com/). Kaggle is an online community for data science and machine learning (ML) enthusiasts. It is a top learning tool for novices and pros, with realistic practice problems to sharpen your data science skills.
@@ -72,6 +77,8 @@ Dataset Preparation [Albrechts Buch] and short oversight over steps.
 Deduplication using Min-Hash [Dedup Papers]
 Translating using Google Translate API
 
+https://chat.openai.com/share/7e821f1d-1dd6-485b-91d8-b37f2f4060e6
+
 ## 5. Methodology
 
 Fallstudie: 100 Selbstklassifizierte Tweets zum Vergleich von meinen Topics, LDA, BertTopic (Roberta), Labse   
@@ -79,6 +86,8 @@ Fallstudie: Vergleich LDA, BertTopic, Labse auf übersetzten Tweets
 Auswahl des geeignetesten Verfahren auf allen Daten.
 
 Evaluation:
+
+https://chat.openai.com/share/c3d59f6c-32b5-4220-a80e-f143ca8d1f2c
 
 ## 6. Schedule
 
