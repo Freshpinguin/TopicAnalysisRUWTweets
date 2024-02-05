@@ -57,3 +57,17 @@ class MinLanguageDataSchema(StrEnum):
     TIMESTAMP = "tweetcreatedts"
     ID = "tweetid"
     DUPL = "dupl"
+
+
+class LemmaDataSchema(StrEnum):
+    """
+    DataSchema for csv containig lemmas, nouns, emojis and so on.
+    """
+
+    ID = "tweetid"
+    TIMESTAMP = "tweetcreatedts"
+    LEMMAS = "lemmas"
+    ADJ_VERBS = "adjs_verbs"
+    NOUNS = "nouns"
+    ENTITIES = "entities"
+    EMOJIS = "emojis"
