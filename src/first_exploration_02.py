@@ -45,6 +45,8 @@ def aggregate_dataframe(df: pd.DataFrame) -> Dict[str, Any]:
     return aggregation
 
 
+
+
 def aggregate_dataframe_test(df: pd.DataFrame) -> Dict[str, Any]:
     """
     Aggregate DataFrame to check if everything went right.....

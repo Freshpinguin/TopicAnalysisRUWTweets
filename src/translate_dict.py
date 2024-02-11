@@ -4,7 +4,7 @@ from src.SampleTranslation05.translation_01 import translate_text_multiple
 class TranslateDict:
 
     def __init__(self, json_path:str="/Users/robinfeldmann/TopicAnalysisRUWTweets/src/BertTopic07/translated.json"):
-        self.to_translate: dict[str,list[str]] = {"de":[], "it":[], "sp":[], "fr":[],"ru":[],"uk":[] }
+        self.to_translate: dict[str,list[str]] = {"de":[], "it":[], "es":[], "fr":[],"ru":[],"uk":[] }
         self.dict = {}
         self.json_path = json_path
 
