@@ -2,6 +2,7 @@ from google.cloud import translate
 import pandas as pd
 from tqdm.auto import tqdm
 from src.data_schemas import MinLanguageDataSchema
+import numpy as np
 tqdm.pandas()
 
 def translate_text(text:str="Hello, world!", project_id: str="evident-display-407715", source_language: str="en-US") -> str:
@@ -103,6 +104,31 @@ def load_samples(path: str = '/Users/robinfeldmann/TopicAnalysisRUWTweets/src/Sa
         translated_entities = df['translated_entities'].str.strip("[]").str.replace(' ','').str.replace("'",'').str.split(','),
         translated_emojis = df['translated_emojis'].str.strip("[]").str.replace(' ','').str.replace("'",'').str.split(','),
 
+    )
+
+    return df
+
+
+def load_samples_embedded(path: str = '/Users/robinfeldmann/TopicAnalysisRUWTweets/src/SampleTranslation05/samples_ready.csv') -> pd.DataFrame:
+
+    df = pd.read_csv(path)
+
+    def listify(series: pd.Series) -> pd.Series:
+        return series.str.strip("[]").str.replace(' ','').str.split(',')
+
+
+    df = df.assign(
+        lemmas = df['lemmas'].str.strip("[]").str.replace(' ','').str.replace("'","").str.split(','),
+        adjs_verbs= df['adjs_verbs'].str.strip("[]").str.replace(' ','').str.replace("'","").str.split(','),
+        nouns = df['nouns'].str.strip("[]").str.replace(' ','').str.replace("'","").str.split(','),
+        emojis = df['emojis'].str.strip("[]").str.replace(' ','').str.replace("'",'').str.split(','),
+        entities = df['entities'].str.strip("[]").str.replace(' ','').str.replace("'",'').str.split(','),
+        translated_lemmas = df['translated_lemmas'].str.strip("[]").str.replace(' ','').str.replace("'","").str.split(','),
+        translated_adjs_verbs = df['translated_adjs_verbs'].str.strip("[]").str.replace(' ','').str.replace("'","").str.split(','),
+        translated_nouns = df['translated_nouns'].str.strip("[]").str.replace(' ','').str.replace("'","").str.split(','),
+        translated_entities = df['translated_entities'].str.strip("[]").str.replace(' ','').str.replace("'",'').str.split(','),
+        translated_emojis = df['translated_emojis'].str.strip("[]").str.replace(' ','').str.replace("'",'').str.split(','),
+        cleaned_text_embeddings = df['cleaned_text_embeddings'].str.encode('utf-8').apply(lambda x: np.frombuffer(x, dtype=np.float32))
     )
 
     return df

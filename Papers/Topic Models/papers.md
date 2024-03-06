@@ -147,3 +147,35 @@ co-occurrences at random, log𝑝(𝑥,𝑦)=log[𝑝(𝑥)𝑝(𝑦)]
 complete co-occurrences, log𝑝(𝑥,𝑦)=log𝑝(𝑥)=log𝑝(𝑦)
 , so nmpi is 1.
 
+
+## [11] Multilingual transformer and BERTopic for short text topic modeling: The case of Serbian
+
+Darijja Medvecki, Bojana Basaragin, Nikola Milosevic
+
+The Institute for Artificial Intelligence Research and Development of Serbia, Fruškogorska 1,
+21000 Novi Sad, Serbia
+
+2024
+
+
+BerTopic on Serbian Tweets. Comparing Models and Preprocessing. As it is monologinual Topic Coherence and Topic Diversity are viable measures.
+
+Models:
+distiluse-base-multilingual-cased-v2: 512 dim
+paraphrase-multilingual-MiniLM-L12-v2: 384 dim
+paraphrase-multilingual-mpnet-base-v2: 768
+
+Topic Representation:
+c-TF-IDF
+removing words that appeard in less then 3 tweets or more than 85% of tweets.
+Outliers werer removed using the reduce_otliers BertTOpic function with c-TF-IDF as reduction strategy.
+
+Data:
+
+1. Removal of links, mentions, emojis, hastags, numbers, punctuation and lowercasing.
+2. Full prepocessing + lemmatization
+
+
+Result:
+Third and largest model gave the best results in partial precosessed data.
+In fully preprocessed data the first model gave the best scores, scoring higher in TC but lower in TD.

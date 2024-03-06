@@ -3,9 +3,11 @@ archive.zip
 Data.zip
 .DS_Store
 samples.xlsx
-
-
+samples_min.xlsx
+samples_cleaned.xlsx
 Data/Languages
 Data/Language_min
 Data/Language_min_dedupl
 Data/Lemmas
+Data/Embeddings
+Data/Samples
