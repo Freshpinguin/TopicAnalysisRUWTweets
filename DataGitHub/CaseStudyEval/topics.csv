@@ -1,0 +1,250 @@
+,topics,translated,listed_lemmas_lda,listed_adjs_verbs_lda,listed_nouns_lda,listed_translated_lemmas_lda,listed_translated_adjs_verbs_lda,listed_translated_nouns_lda,random_topics,random_topics_best_of_1000,random_topics_best_of_100,kmeans_model_labse_text_embeddings,kmeans_model_parahprase_min_text_embeddings,kmeans_model_parahprase_max_text_embeddings,kmeans_eng_model_text_embeddings,kmeans_model_labse_translated_embeddings,kmeans_model_parahprase_min_translated_embeddings,kmeans_model_parahprase_max_translated_embeddings,kmeans_eng_model_translated_embeddings,kmeans_model_labse_cleaned_text_translated_embeddings,kmeans_model_parahprase_min_cleaned_text_translated_embeddings,kmeans_model_parahprase_max_cleaned_text_translated_embeddings,kmeans_eng_model_cleaned_text_translated_embeddings,kmeans_model_labse_cleaned_text_embeddings,kmeans_model_parahprase_min_cleaned_text_embeddings,kmeans_model_parahprase_max_cleaned_text_embeddings,kmeans_eng_model_cleaned_text_embeddings,kmeans_model_labse_lemmas_embeddings,kmeans_model_parahprase_min_lemmas_embeddings,kmeans_model_parahprase_max_lemmas_embeddings,kmeans_eng_model_lemmas_embeddings,kmeans_model_labse_adjs_verbs_embeddings,kmeans_model_parahprase_min_adjs_verbs_embeddings,kmeans_model_parahprase_max_adjs_verbs_embeddings,kmeans_eng_model_adjs_verbs_embeddings,kmeans_model_labse_nouns_embeddings,kmeans_model_parahprase_min_nouns_embeddings,kmeans_model_parahprase_max_nouns_embeddings,kmeans_eng_model_nouns_embeddings,kmeans_model_labse_translated_lemmas_embeddings,kmeans_model_parahprase_min_translated_lemmas_embeddings,kmeans_model_parahprase_max_translated_lemmas_embeddings,kmeans_eng_model_translated_lemmas_embeddings,kmeans_model_labse_translated_adjs_verbs_embeddings,kmeans_model_parahprase_min_translated_adjs_verbs_embeddings,kmeans_model_parahprase_max_translated_adjs_verbs_embeddings,kmeans_eng_model_translated_adjs_verbs_embeddings,kmeans_model_labse_translated_nouns_embeddings,kmeans_model_parahprase_min_translated_nouns_embeddings,kmeans_model_parahprase_max_translated_nouns_embeddings,kmeans_eng_model_translated_nouns_embeddings,hdbscan_model_labse_text_embeddings,hdbscan_model_parahprase_min_text_embeddings,hdbscan_model_parahprase_max_text_embeddings,hdbscan_eng_model_text_embeddings,hdbscan_model_labse_translated_embeddings,hdbscan_model_parahprase_min_translated_embeddings,hdbscan_model_parahprase_max_translated_embeddings,hdbscan_eng_model_translated_embeddings,hdbscan_model_labse_cleaned_text_translated_embeddings,hdbscan_model_parahprase_min_cleaned_text_translated_embeddings,hdbscan_model_parahprase_max_cleaned_text_translated_embeddings,hdbscan_eng_model_cleaned_text_translated_embeddings,hdbscan_model_labse_cleaned_text_embeddings,hdbscan_model_parahprase_min_cleaned_text_embeddings,hdbscan_model_parahprase_max_cleaned_text_embeddings,hdbscan_eng_model_cleaned_text_embeddings,hdbscan_model_labse_lemmas_embeddings,hdbscan_model_parahprase_min_lemmas_embeddings,hdbscan_model_parahprase_max_lemmas_embeddings,hdbscan_eng_model_lemmas_embeddings,hdbscan_model_labse_adjs_verbs_embeddings,hdbscan_model_parahprase_min_adjs_verbs_embeddings,hdbscan_model_parahprase_max_adjs_verbs_embeddings,hdbscan_eng_model_adjs_verbs_embeddings,hdbscan_model_labse_nouns_embeddings,hdbscan_model_parahprase_min_nouns_embeddings,hdbscan_model_parahprase_max_nouns_embeddings,hdbscan_eng_model_nouns_embeddings,hdbscan_model_labse_translated_lemmas_embeddings,hdbscan_model_parahprase_min_translated_lemmas_embeddings,hdbscan_model_parahprase_max_translated_lemmas_embeddings,hdbscan_eng_model_translated_lemmas_embeddings,hdbscan_model_labse_translated_adjs_verbs_embeddings,hdbscan_model_parahprase_min_translated_adjs_verbs_embeddings,hdbscan_model_parahprase_max_translated_adjs_verbs_embeddings,hdbscan_eng_model_translated_adjs_verbs_embeddings,hdbscan_model_labse_translated_nouns_embeddings,hdbscan_model_parahprase_min_translated_nouns_embeddings,hdbscan_model_parahprase_max_translated_nouns_embeddings,hdbscan_eng_model_translated_nouns_embeddings
+0,0,#UkraineWar: The #EU #sanctions against #Russia at a glance #UkraineRussiaWar #UkraineRussiaCrisis @merkur_de https://t.co/0KUd3lSfFn,0,0,2,3,0,0,1,0,1,0,3,0,0,0,0,0,0,1,0,0,0,1,1,3,0,1,3,3,0,3,3,3,2,1,3,3,0,0,0,0,3,0,3,3,3,0,1,0,1,0,3,0,0,0,0,0,0,0,0,0,0,0,3,-1,0,1,-1,3,0,3,3,3,0,2,1,0,0,3,0,0,0,3,3,1,3,0,3,0,0
+1,1,"Vogt-Wuchter: ""We are shocked by the war in Ukraine - in the middle of Europe - which Russia launched against its neighboring country in violation of international law.""
+Civilians are victims of the conflict. Hundreds of thousands are fleeing.
+Statement: https://t.co/rZWWGDFiTX
+#ukraine https://t.co/MHxIOoMXjK",1,0,3,2,1,1,1,1,1,1,2,2,0,1,1,2,2,1,2,2,1,1,1,1,0,1,2,1,0,2,1,1,2,1,1,3,0,1,3,1,1,1,3,1,3,1,1,2,1,1,1,2,0,1,1,2,2,1,2,2,2,1,3,-1,0,2,-1,-1,0,2,1,1,1,1,1,3,0,1,1,-1,3,3,3,1,3,1,3,1,-1
+3,2,"The Interior Ministry of #Ukraine reported on Sunday evening 352 civilians killed since Russia's attack on Ukraine, including 14 children.
+A further 1,684 wounded people were counted, including 116 children.
+
+#FCKPTN #Weapons #UkraineWar #PutinsWar #Belarus #Putin",2,0,0,2,0,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,0,3,2,2,2,3,2,1,0,2,2,2,2,0,1,1,1,1,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,0,3,2,2,1,3,2,3,0,2,2,2,2,3,0,1,2,3,2,2,2
+4,0,"@Federal Chancellor STOP imports from Russia immediately, whether GAS or coal! It cannot be the case that Germany is complicit in war crimes. #StopPutinNOW",1,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,-1,0,0,0,1,0,0,0,0,0,0,0,0,0,3,3,1,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
+5,0,"#Ukraine
+Everyone complains about high gas prices
+The EU is financing Putin's war
+An imbargo would make sense for a short period of time
+Putin is financing the war from oil and gas exports!!!",1,1,0,0,2,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+6,1,"@RusMessage Oh, a special conversation situation.
+
+#Putin wages war and commits war crimes.
+You can save yourself that crap.",1,2,0,3,1,1,0,1,3,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,0,0,1,3,0,3,3,3,2,1,2,1,0,1,1,1,1,3,0,0,0,1,1,1,1,-1,3,1,0,-1,1,-1,1,1,1,1,1,1,3,1,0,1,1,1,0,3,3,3,1,1,1,1,0,1,1,3,3,2,1,0,0,1,1,1,1
+7,1,The Federal Attorney General is investigating... possible #warcrimes #Russia in #Ukraine - but not against President #Putin personally. The International Criminal Court (ICC) is also already investigating. After .../2 https://t.co/DUjDLKylHE,0,0,0,1,0,1,2,2,0,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,3,2,2,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,0,0,3,3,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,0,1
+8,1,"The targeted bomb attack on the #Children's Clinic in #Mariupol is despicably unscrupulous and shows the full inhumanity of #Putin.
+It is a barbaric, brutal #warcrime - inexcusably inhumane.
+#StopPutinNOW #StandWithUkraine #PutinIsaWarCriminal",3,2,1,1,0,1,3,1,3,1,1,2,1,1,1,1,1,3,2,1,1,1,1,1,1,1,1,1,1,1,1,0,2,2,2,1,0,2,1,1,1,1,1,1,1,2,2,2,1,2,1,2,1,1,1,1,1,1,2,1,2,1,2,2,1,1,1,1,1,1,1,1,1,2,2,1,0,2,2,1,1,1,1,1,1,3,2,2,1
+9,0,#Ukraine️ - we should give up #gas and #oil from #Russia. It is #unbearable that people are #slaughtered with our #money.,2,1,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,2,2,0,0,0,0,0,0,0,0,2,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,3,1,0,0,0,0,0,0,0,0,2,2,2,1,0,0,0,0
+10,0,"Thank you to everyone in the #CDU, the #CSU and the #SPD for sticking to fossil fuels and for the wonderful #Putin cuddling in the #Merkel era.
+
+So to speak, it's the hard-working @tobiashan's memory gas price.
+
+@cducsubt @spdde https://t.co/Y28h0twB17",1,2,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,2,0,0,0,0,0,0,0,0,3,2,2,2,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,1,0,0,0,0,0,0,0,0,1,2,2,2,0,0,0,0
+11,2,"🛑🛑🇷🇺🇺🇦 Russia attacked the settlement in the Svyatoshinsky district of Kiev! Mayor; ""5 people were injured, 2 were hospitalized""
+ #UkraineRussiaWar #Ukraine #Russia #Kiev #Kyiv
+ https://t.co/lPFF7SJ1lU… https://t.co/Dut21hbNWS",0,3,2,2,2,2,2,3,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,0,2,1,1,2,2,2,2,0,2,2,2,2,0,1,1,1,2,2,2,2,2,2,2,0,2,1,2,2,2,2,2,2,2,2,2,0,2,2,2,0,0,1,1,1,2,2,2,0,2,2,2,2,1,0,1,2,2,2,2,2
+12,3,"@PhilipPlickert WE Germans in particular should be ashamed that WE don't help #Ukraine much more, especially not with many more and stronger weapons....",3,3,0,3,3,3,3,0,0,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,0,2,1,1,2,3,3,2,0,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,-1,3,3,3,3,3,0,3,3,3,0,2,1,1,1,1,2,2,0,3,3,3,3,1,3,3,1,3,3,3,3
+13,0,"@Zeroorless Since we don't have an oil embargo against Russia, the government is helping people finance the #Ukraine war.
+
+It's so wrong on so many levels, I really don't have any words for it anymore.",0,0,0,0,3,2,3,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,2,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,3,0,0,0,1,0,0,3,3,3,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+14,3,"@faznet @NikolasBusse ""#Ukraine needs heavy weapons,"" says ex-civil service worker, Nikolas Busse! 🤦😂",3,3,0,3,3,3,0,3,0,1,3,3,0,1,3,3,3,1,3,3,3,1,3,3,0,2,3,3,0,2,1,1,2,2,3,2,0,2,3,3,3,3,2,0,2,1,3,3,2,1,3,3,0,-1,3,3,3,1,3,3,3,-1,3,3,0,1,3,3,0,2,1,1,1,2,3,2,0,2,3,3,3,1,2,0,2,2,3,3,2
+15,3,"Just deliver a few long-range nuclear missiles to #Ukraine, #Putin will get out of Ukraine faster than Fler will get out of Hoe. 😆",2,3,3,0,1,1,3,1,1,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,0,3,1,3,0,3,3,3,2,3,0,3,0,3,3,3,3,1,3,3,3,3,3,3,3,3,3,1,0,3,3,3,3,3,1,3,3,3,-1,3,0,3,1,-1,0,3,3,3,1,2,1,0,0,3,3,3,3,1,3,3,3,1,3,3,3
+16,2,"People are being slaughtered, kidnapped, raped and thrown into mass graves by the Russians in #Mariupol.
+
+But of course, Ukraine should capitulate and insist on peace.
+
+Do you notice anything else?",2,2,2,1,0,3,3,3,1,2,2,2,0,0,1,2,1,3,2,2,1,1,1,1,0,2,2,1,0,1,2,2,2,0,1,3,0,2,2,1,1,2,0,2,2,2,2,2,2,2,1,2,0,1,1,-1,1,1,2,-1,1,1,2,2,0,2,2,1,0,1,2,2,1,1,1,2,0,2,2,1,1,2,2,2,1,2,2,2,2
+17,3,"Dear friends,
+
+Our #Cheetah tanks are used in #Ukraine, for example, to protect infrastructure such as the port of #Odessa. Anyone who does not supply ammunition to an invaded state for national defense can no longer be a reliable supplier of ammunition for us",3,3,2,3,3,3,3,2,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,0,3,3,3,2,3,3,3,1,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,0,3,3,3,-1,3,3,3,3,3,3,3,0,3,3,3,0,3,3,3,1,3,2,3,-1,3,3,3,3,3,3,3,3,3,3,3,3
+18,0,"Analysis: Europe will close the cap on Russian oil at $60 but it will not serve to harm Russia
+
+#Europe
+#Russia
+#petroleoruso
+#oilbarrel
+#oilproduction
+
+⬇️⬇️⬇️
+https://t.co/H2D0OItJn6 https://t.co/zAGiIWdd2a",0,2,2,0,2,2,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,2,1,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0
+19,0,"#BREAKING
+Although the European Union tries to blame #Putin for the energy shortage in #Europe this winter, it was his own decision to suspend the import of Russian gas and oil in the spring, bowing to the demands of the US and #NATO.
+#UkraineRussianWar #RussiaUkraineWar",0,0,0,0,2,1,1,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0
+20,2,"#Russia: 2,500 dead seals found on the coast of the Caspian Sea, in Russia. https://t.co/YinECND4uW",1,2,2,2,2,3,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,3,2,2,0,1,0,3,2,2,2,2,2,2,2,2,2,0,0,3,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,3,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,0,0,1,-1
+21,3,"🇷🇺🔥🇺🇦 #Russia Vs #Ukraine - Day 287 - According to this, the #USA would be pressuring #Germany to deliver Leopard 2 battle tanks (we understand 2A4) to Ukraine.
+
+https://t.co/8RQGt2SyvU",2,3,0,0,2,0,3,2,1,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,1,3,3,3,2,3,3,2,0,1,3,3,2,3,3,3,3,1,3,3,3,3,3,3,3,3,3,-1,2,3,3,3,3,3,3,3,3,3,3,3,1,3,3,3,2,3,3,3,2,2,3,3,2,1,3,3,3,3,3,3,3,2,3,3,3
+22,0,"The #EU is concerned that #Turkey has expanded trade with #Russia instead of imposing sanctions since the start of the conflict in #Ukraine, said EU High Representative for Foreign Affairs Josep Borrell. #La580 https://t.co/vGdIuyowP3",3,0,2,3,0,0,1,1,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,2,3,3,0,0,3,0,0,2,0,0,0,0,1,1,0,3,1,1,0,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,1,3,0,0,2,0,3,-1,2,1,0,0,2,1,0,0,0,1,0,1,3,3,3,0,0
+23,2,"Three people died in the crash of a Mi-8 helicopter in Russia's Buryatia.
+#Ukraine #Ukraine #Russian #War
+https://t.co/m3JYcbx81w",1,2,2,2,3,2,2,1,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,1,1,2,1,3,3,2,2,2,2,2,0,1,3,1,2,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,-1,1,0,2,3,3,2,2,2,2,2,0,0,1,2,2,3,2,2
+24,3,CNN: Biden is finalizing sending Patriot to Ukraine #ukraina #russia #war https://t.co/myra2Wn1pT,1,1,2,3,1,3,1,3,2,3,3,3,2,3,3,3,3,1,1,3,3,1,1,3,1,3,3,1,2,2,1,1,1,1,3,3,2,1,3,3,3,3,0,0,0,1,1,3,3,3,3,-1,2,3,3,3,3,3,-1,1,1,0,3,1,1,3,3,3,2,2,1,1,0,2,1,2,-1,1,0,3,3,2,1,0,0,2,3,1,-1
+25,3,"@RussianEmbassyR @MID_RF @tass_agency @rianru @KommersantUK @bbcrussian @NATOpoRusski @1tvru_news @vzglyad @rgrus @rentvchannel Large-scale supplies of weapons are vital for Ukraine to defend itself from crazy Russia, which has become obsessed with Russian fascism and started an unjust, genocidal, illegal war.
+ If Russia were attacked, it would also receive help for self-defense.",3,3,0,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,3,3,3,1,3,3,3,3,3,1,1,1,1,3,3,3,3,3,3,3,3,-1,3,3,3,3,3,3,3,3,3,3,3,-1,3,3,3,0,0,1,3,3,1,0,3,1,3,3,3,1,0,1,2,3,3,3,3
+26,3,"An American strategic reconnaissance drone RQ-4 Global Hawk is circling off the coast of Crimea.
+😅🔥👌🏻
+#UkraineRussianWar
+#ukrainecounteroffensive
+#war on Ukraine
+#Ukraine️
+#RussiaUkraineWar
+#RussiaIsATerroristState
+#USA https://t.co/mngDrCHZvD",2,0,2,3,1,1,2,1,2,1,3,3,3,1,3,3,3,1,3,3,3,1,3,3,3,3,3,3,3,2,3,2,3,1,3,3,3,1,3,3,3,0,3,3,3,3,3,3,3,1,3,3,-1,1,3,3,3,1,3,-1,3,0,3,3,3,-1,3,3,3,0,3,3,3,1,3,3,3,1,3,3,3,3,3,1,3,3,3,3,3
+27,3,"Lithuania will not be able to transfer NASAMS air defense systems to Ukraine, but will provide shells for the PzH 2000 self-propelled guns https://t.co/be0DsmrhgH #Russia #Ukraine",3,2,1,0,3,1,3,2,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+28,3,"#UkraineRussianWar 🕶️⚡️🇹🇷🇹🇷👍👍‼️ Turkey delivered a batch of TRLG-230 high-precision missiles to Ukraine. They are launched from the ROKETSAN development platform. The flight range is 70 km, laser beam guidance system. Target illumination is provided by Bayraktar TB2. https://t.co/teMu0ftJHB",0,2,2,3,3,0,1,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+30,1,"@A_Ra_Berlin I watched carefully, and it seemed to me that he wanted to repeat the Georgia 2008 option by making Ukraine the aggressor. And here Ukraine did not fall into any traps, all the fakes were exposed instantly, and as a result, nothing limited international support. Saakashvili's lesson has been learned.",2,3,0,3,2,1,1,0,1,1,3,3,3,3,3,3,3,3,1,3,1,1,1,3,3,1,1,3,3,1,3,2,3,3,3,3,3,3,3,3,3,1,3,3,3,1,1,3,3,3,3,1,3,-1,3,3,3,1,1,1,1,1,3,1,3,1,1,1,3,1,3,3,3,3,1,0,3,1,3,3,3,1,3,1,3,0,3,3,-1
+31,3,G7 leaders expressed unwavering support for Ukraine and promised air defense systems https://t.co/AQ0gSlW1QW #Russia #Ukraine,1,2,1,3,2,1,3,0,2,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,1,3,3,3,3,1,3,3,3,3,3,3,3,3,3,-1,3,3,3,1,-1,3,-1,3,3,3,3,3,3,3,3,3,3,1,0,3,3,1,3,3,3,3,3,3,3,3,3,3
+32,3,"The German company Rheinmetall has confirmed an order for the production of two Skynex air defense systems for Ukraine, Handelsblatt reports.
+#Ukraine #Kherson #Crimea #Dnipro #Wagner #Bakhmut #HIMARS #Kyiv #Belarus #Ukrainian #Moscow #Crimea #Donetsk #Bakhmut https://t.co/BSBOWCOaMJ",1,3,0,2,1,2,1,0,1,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,1,1,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,-1,3,3,3,3,3,3,1,3,3,3,0,3,1,0,3,3,3
+33,2,"The burial of an entire family was found in Izyum. We are talking about the Stolpakov family: 31-year-old Elena and 33-year-old Dmytro, as well as their daughters 5-year-old Lesya and 8-year-old Sasha, as well as their grandmother (according to other data, the grandfather also died)
+
+#russiaisaterrorisstate #Izium #Ukraine️ #StopRussianAggression https://t.co/UCX2pXb5mo",0,2,0,1,3,1,2,2,1,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,3,2,2,2,3,3,2,2,3,2,2,2,3,2,2,2,2,0,2,3,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,3,2,2,1,3,3,2,2,3,1,2,2,3,2,2,2,2,3,2,1,1,2,2,2,2
+34,3,"🇺🇸The US Congress instructed the Pentagon to accelerate the delivery of large drones to Ukraine
+
+#RussiaInvadedUkraine #RussiaisATerroistState #USA #Ukraine️ https://t.co/wXUEt5ePm7",0,3,2,3,3,0,1,2,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,3,3,3,3,3,3,3,3,3,3,3,-1,3,3,3,1,3,3,3,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,1,0,1,3,3,3,3,3
+35,2,"A total of 447 dead were found. Among them are 425 civilians and 22 soldiers of the Armed Forces of Ukraine.
+
+#stoprussia
+
+https://t.co/DuYdDj2LJR",0,1,3,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,3,2,2,2,3,3,2,2,3,2,2,2,3,2,2,2,2,2,2,2,2,1,3,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,3,2,2,1,3,3,3,-1,3,2,2,2,3,2,2,2,2,2,2,2,2,2,3,3,2
+36,0,"The European Commission emphasizes that the import from Russia and the transit of some oil products should be allowed to ensure food and energy security in the world. First of all, Poland and the Baltic states oppose such a decision
+#StopRussia #StopPutin
+https://t.co/vOEGDCc3rk",0,1,2,0,3,0,2,0,1,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,3,3,3,3,3,0,0,0,3,0,0,0,0,1,3,3,3,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,3,3,3,3,3,0,0,0,3,0,0,0,0,1,3,1,3,0,0,0,0
+37,2,"Fragments of a child's body were found at the site of a rocket attack in Dnipro
+https://t.co/5aw3iLOKjo
+
+#Ukraine #Dnipro",3,2,2,2,2,2,2,3,1,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,3,2,2,2,3,3,3,3,3,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,3,2,2,1,3,3,3,3,3,2,2,2,3,2,2,2,2,2,2,2,2,3,2,2,2
+38,1,There is not a single generation of the Ukrainian people that has not suffered at the hands of the Russians. The realization of this hurts so much that it often seems as if this hell will never end. As if this hell is life itself.,0,0,0,3,2,3,3,0,2,1,2,2,3,1,1,1,1,3,2,2,1,3,1,1,3,2,1,1,3,2,1,1,3,2,1,2,3,2,1,1,1,1,3,3,1,2,2,1,1,-1,1,2,3,-1,1,1,-1,1,2,1,1,3,2,2,3,2,1,1,3,2,1,1,3,2,2,2,3,2,2,1,1,1,3,1,2,3,2,1,-1
+39,1,"The terrorist organization ""Russia"" fired a volley of S-300 missiles at a convoy of people heading to the occupied territory to visit their relatives, killing dozens of civilians.
+When will a special tribunal be created to criminalize the regime of these scum?
+#russiaisaterroriststate
+#Russia
+#Ukraine",1,1,1,1,1,1,1,2,1,1,2,1,3,0,1,1,1,1,1,1,1,2,2,1,3,2,1,1,3,1,2,2,3,3,0,1,3,1,3,1,1,0,1,1,1,0,3,1,1,2,1,2,3,0,0,1,1,1,0,1,1,2,2,2,3,1,1,1,3,1,2,2,3,1,2,1,3,1,1,-1,3,3,0,1,2,0,3,1,1
+40,3,"F-16 with semi-stealth AGM-158 missiles with a range of 370 km, 925 km and 1900 km depending on the modification.
+Uncle Joe, please! @POTUS
+#UkraineWar #F16forUkraine #AGM158forUkraine #armukrainanow https://t.co/4I6PZ1Oz9y",0,0,3,1,3,3,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,2,3,3,3,3,1,3,3,3,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,-1,3,3,3,-1,3,3,3,3,3,3,0,1,3,3,3,1,3,3,3,1,3,3,3,3,3,3,3
+41,0,Europe is slowly losing their standard of living. The sanction is damaging the economy. blowback Russian sanction.#SHUTDOWN .#EuroBasket .#NATO .#Russia .,1,0,3,3,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0
+42,3,@Halla_aho Here we do have the challenge. The European #NATO countries with missing stockpiles of key weaponry does make the NATO weak. There has to be a balance between weapons sent to Ukraine and weapons kept for own/Nato defence. No matter how much any Nato country would like to help.,0,0,1,3,2,3,3,1,0,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,0,1,3,3,1,3,3,3,1,3,3,3,3,3,0,0,0,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,0,1,3,3,0,3,3,0,-1,3,3,3,3,1,1,0,0,3,3,3,3
+44,3,"This is horrible..and probably the tip of the iceberg..
+#Russians were sent to murder, torture, rape, destroy everything in #Ukraine...
+#RussiaIsANaziState https://t.co/rmqwEWcgvb",2,0,3,1,1,1,3,1,3,1,2,2,0,0,1,1,1,3,2,2,1,1,1,1,0,1,1,1,1,0,1,0,1,2,2,1,1,2,1,1,1,1,1,1,3,2,2,1,1,-1,1,2,0,1,1,1,1,1,2,1,1,1,2,2,0,1,1,1,1,1,1,1,0,1,2,1,1,2,2,1,1,3,3,1,1,2,2,2,1
+45,1,More and more evidence of #Russian war crimes uncovered on a near daily basis in #Ukraine️. All being documented and sent to the #Hague. https://t.co/GBJAaRW8hD,3,0,1,3,1,1,0,0,2,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,3,1,1,1,1,1,1,2,0,1,1,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,0,-1,0,1,1,1,1,1,1,1,1,3,0,1,3,1,1,1,1
+47,0,Twenty-two individuals and two entities are subject to new anti-Russian sanctions by the U.S. Treasury Department's Office of Foreign Assets Control (OFAC). #USA #Russia #sanctions https://t.co/BRmLSMAiBY,0,0,0,0,0,3,0,1,0,1,1,0,0,1,1,0,0,1,0,0,0,1,0,0,2,1,1,1,1,0,0,0,1,3,0,0,0,0,0,0,1,0,1,3,1,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,2,1,1,-1,1,0,0,0,0,1,0,0,0,3,0,0,0,1,0,1,1,0,3,0,0
+48,0,"Russia finances hit by cheaper oil and costs of Ukraine war | CNN Business 
+
+#Ukraine🇺🇦 #Freedom🇺🇲 #KeepKyivFree✊🏽 #Zelenskyy #FuckPutin
+
+ https://t.co/23lSj165DR from @CNNbusiness",1,0,2,0,1,3,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,1,0,0,0,0,0,0,0,0,0,3,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,1,3,1,3,0,0,0,0
+49,2,"#Breaking! 
+
+Two killed and three injured in Donetsk
+More details of overnight attacks are emerging from Ukraine today.
+
+#theshadepill #StopRussia
+#RussiaKillsCivilians #emergency #Trending",0,0,2,1,2,2,3,2,1,2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,1,2,1,3,1,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,0,2,1,2,1,2,2,2,2,2,1,1,2,2,3,3,2
+50,0,"@RazomWeStand asks that you sign this petition https://t.co/SHYIO9Lyvn for a full Western embargo on Russian oil and gas and that you push big Western players, including BlackRock, to get the heck out of the 40 giant “carbon bomb” projects planned for russia #StandWithUkraine https://t.co/m5Db7xgrfi",0,0,2,0,0,0,1,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,3,1,0,0,0,0
+51,1,"Allies do not and will never recognize Russia’s illegal and illegitimate annexation of Crimea.  Sham referenda in the Donetsk, Luhansk, Zaporizhzhia, and Kherson regions of Ukraine have no legitimacy and will be a blatant violation of the UN Charter #StandWithUkraine https://t.co/sRWpPDm3vn",2,0,1,2,3,1,3,3,0,1,1,3,0,1,3,3,1,3,1,1,0,1,1,3,0,1,1,1,0,1,2,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,3,1,0,-1,-1,3,-1,1,-1,-1,0,1,3,0,0,1,1,1,0,1,-1,-1,0,1,1,1,1,1,1,-1,0,1,0,1,1,0,3,0,0
+52,3,"@Slava_myself @GJStathakis I hope you are wrong.
+
+However we all know what it needs are #Abrams, #Leopard2, #Challenger2 and/or #Leclerc battletanks to really make a difference.
+
+We could send those in such numbers, that they would overwhelm the #Russian Army for sure.",2,3,2,1,2,1,3,1,2,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,0,0,0,0,1,1,3,3,1,3,3,3,3,0,1,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,0,0,0,1,0,1,3,3,-1,3,3,3,3,1,0,1,1,3,3,3,3
+53,2,"20 reportedly killed as Russian forces shelled civilian convoy in Kupiansky district, Kharkiv Oblast #russia #ukraine #war https://t.co/u3amoL7nCc https://t.co/vTy09Fjx1f",2,2,2,2,2,1,2,3,3,2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,0,0,1,1,3,3,1,2,2,2,2,0,1,1,1,1,3,3,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,-1,2,2,2,1,2,1,1,0,2,3,2,1,2,2,2,2,0,0,1,2,2,3,3,2
+54,3,".@visegrad24:
+#PolishPres. #Duda in #Lviv today:“A major military modernization program is underway in #Poland. The equipment we are replacing will be sent to #Ukraine”.It means Ukraine can count on hundreds of pieces of Polish tanks,IFVs &amp; MLRS over time(PT-91/T-72/BMP/Grad)🇵🇱🇺🇦 https://t.co/FuE4tOLxzN",2,0,2,2,1,2,0,0,1,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,0,0,2,1,1,3,3,3,1,3,3,3,3,1,1,3,3,3,3,3,3,3,3,3,0,3,3,3,-1,3,3,3,3,3,3,3,0,3,3,3,0,0,-1,-1,0,3,3,3,-1,3,3,3,3,1,1,3,3,3,3,3,3
+55,0,"#Europe #EU #Ukraine #Russia
+The European Union is set to ban Sputnik, a Russian government information channel, from operating on its territory.
+
+@ultimora_pol",3,0,1,0,2,0,2,3,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,-1,1,3,0,0,2,1,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,3,0,0
+56,3,"The sending of weapons by #NATO countries to #Ukraine is an act of war against #Russia.
+Let's just hope #Putin doesn't pay attention to it.",2,2,2,3,2,1,2,0,0,3,3,3,2,3,3,3,3,3,1,3,3,3,0,3,1,3,1,3,2,3,3,3,0,3,0,3,2,3,3,3,3,3,0,0,0,3,3,3,3,3,3,-1,2,3,3,3,3,1,1,-1,3,3,3,-1,1,3,1,1,2,3,3,3,2,3,1,0,2,3,3,3,3,2,1,0,0,3,3,3,3
+57,0,ATTENTION: Germany and Italy are receiving immense pressure to disconnect #Russia from the #Swift transaction circuit. Obviously: they are the countries that have the most relations with Moscow and that would take it there. https://t.co/EmDR4IRGYb,0,2,1,0,3,0,2,0,3,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,3,0,0,2,1,3,2,0,0,0,0,2,3,0,0,0,3,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,3,0,0,2,1,3,3,2,0,0,0,2,3,0,0,0,1,0,0,0,0,3,0,0
+58,2,"They bombed hospitals, universities, homes of ordinary citizens, they bombed kindergartens, schools... They killed children, women and men...
+Only an infamous person could do something like that.
+
+#RussianUkrainianWar #Putin #Ucrania",2,2,1,1,3,2,2,3,0,1,2,2,2,0,1,1,1,3,2,2,1,1,1,1,1,2,1,1,2,1,1,0,1,2,2,2,2,2,1,1,1,2,2,2,2,2,2,2,1,2,1,2,2,1,1,1,1,1,2,1,2,1,2,2,1,1,1,1,2,1,1,1,0,2,2,2,2,2,2,1,1,1,2,2,2,2,2,2,1
+59,3,"#RussiaUcrania #russia #ukraine #draghi #Italy #EU
+But who pays for the weapons sent? In addition to us and our children with the risk of their lives....",2,3,3,3,1,2,0,2,3,0,3,3,2,0,1,3,0,3,2,3,0,3,1,3,1,3,2,3,2,2,1,1,0,3,2,1,2,3,2,1,1,3,0,0,0,3,2,2,1,3,-1,3,2,3,1,3,0,3,2,-1,0,0,2,3,1,-1,2,-1,2,2,1,1,2,1,2,3,2,1,2,3,-1,2,1,0,0,3,2,1,-1
+60,2,"#Unity #Crisis #International ; 5 dead after the air attack on the #Ukraine television headquarters. Reports of violence from students and women are increasing.
+#NoallaGuerra #SiallaVita
+ #RussiaUkraineConflict #RussiaUkraineWar #negotiations.",0,1,0,2,2,1,2,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,0,1,1,0,2,1,3,2,2,2,2,2,0,1,1,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,1,1,0,2,1,3,2,2,2,2,2,3,0,1,3,2,3,3,2
+61,0,"Apple, Eni, Ford and more: large companies have taken action against #Russia.
+The list of companies that have decided to take concrete action against the Russian invasion of #Ukraine is dense and constantly updated
+#WWE2K22
+
+https://t.co/i0wWlQTDfM
+@ForbesItalia https://t.co/UPERyzaOpy",2,2,3,2,2,1,0,3,0,0,0,0,2,0,3,0,0,1,3,0,0,0,0,3,1,3,0,3,2,0,0,0,0,3,3,3,2,3,0,0,3,0,1,3,0,3,3,3,3,0,3,-1,2,0,-1,0,0,1,1,0,1,0,3,-1,1,-1,1,-1,2,0,0,0,0,3,2,3,2,3,1,0,3,1,0,3,3,2,3,1,3
+62,0,"Sanctions against #Russia also affect cats. The International Feline Federation has announced it has banned Russian cats from its competitions around the world until at least the end of May, saying it is ""horrified"" by the invasion of #Ukraine.",1,1,3,3,2,0,1,0,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,2,0,0,0,0,3,0,0,2,0,0,0,3,1,1,1,3,0,3,0,1,0,0,0,2,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,2,1,0,0,0,3,0,0,2,3,0,0,0,1,0,1,1,0,3,0,0
+63,1,"Anyone who deliberately attacks hospitals and civilian homes is a criminal and should be punished immediately, but even those who tolerate it, by refusing to back down from their positions, are contributing to the mass slaughter of their people.#RussiaUkraineConflict #UkraineWar",3,2,1,1,3,2,1,2,3,1,2,1,2,0,1,1,1,3,2,1,1,1,1,1,1,2,1,1,1,0,1,0,1,2,2,2,2,2,1,1,1,1,3,1,3,2,2,2,1,2,1,2,2,1,1,1,1,1,2,1,2,1,2,2,1,1,1,1,1,1,1,1,0,2,2,2,2,2,2,1,1,1,3,1,3,2,2,2,1
+64,0,"#Rolex stops exporting goods to #Russia, #Bloomberg reports. https://t.co/CIUt5hv6Zx",0,1,2,2,2,1,3,2,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,2,3,3,3,0,0,0,0,0,0,0,0,0,3,0,0,0,0,1,3,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,-1,3,-1,3,0,0,0,3,-1,0,0,0,0,2,1,0,0,0,3,1,-1
+65,1,"#Lavrov #Putin and all those who carried out the massacre in #Ukraine will have to pay for their crimes with the death penalty, let's hope they don't go unpunished as happened with the bastards who exterminated Vietnamese children with Napalm.",1,1,2,1,2,2,2,2,1,1,2,1,2,0,1,1,1,3,2,1,1,0,1,1,1,1,1,1,2,1,2,2,0,2,2,1,2,2,1,1,1,2,2,2,2,2,2,2,1,-1,1,2,2,0,1,1,1,1,2,1,1,-1,2,2,1,1,1,1,2,1,3,2,2,1,2,1,2,2,2,1,1,2,2,2,1,3,2,2,1
+66,1,"Let's be clear: #Putin ordered to attack, bomb and hit #Ukraine. The initiative of the #war is his, the invasion is criminal, the #Ukrainians have every #right and #duty to offer #resistance to the invaders. Demanding their surrender is an embarrassing infamy.",3,3,1,1,0,2,2,3,2,1,1,1,2,0,3,1,1,3,1,1,1,1,1,1,1,1,1,3,2,1,1,0,0,3,3,1,2,3,3,3,3,1,3,1,3,1,3,1,3,-1,3,1,2,1,3,3,1,1,1,1,1,1,3,1,1,1,1,1,2,1,1,1,2,3,1,0,2,1,3,3,3,1,3,1,1,1,3,1,3
+67,0,"#petrol #gas #wheat #fuel #bills etc
+Other than #sanctions on #Russia, this is Italy's #assisted suicide
+#UkraineWar
+#DraghiLeaveNOW
+Let's give up and hand over #Zelensky to him with apologies. https://t.co/Dy4qFXnRdj",3,0,3,2,2,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,2,2,1,1,1,0,0,2,2,0,0,0,0,1,3,3,3,0,0,0,0,0,0,0,2,0,0,-1,0,0,0,0,0,0,0,-1,1,0,0,0,2,2,1,1,0,0,0,2,-1,0,0,0,0,1,3,3,1,0,0,0,0
+68,3,"It seems that Poland has indicated its willingness to transfer its #Mig29 to the Ramstein base in order to send them to Ukraine.
+So it's not just us Italians who are idiots....
+#UkraineRussianWar",3,3,3,0,3,2,2,0,3,3,3,3,2,3,3,3,3,3,3,3,0,3,3,3,1,3,3,3,2,3,3,3,0,3,3,3,2,3,3,3,3,1,3,3,3,3,1,1,0,3,3,3,2,3,3,3,0,3,3,-1,0,3,3,3,1,3,-1,3,2,3,-1,3,2,3,1,3,2,1,3,3,-1,3,3,3,3,3,3,1,0
+69,1,"Three weeks after the start of the war, people still have to understand that there is an invader and an invaded. Let's do well.
+#sbetti
+
+#Ukraine️ #nowar #UkraineWar #whitezone",0,1,1,1,2,2,1,1,1,2,3,3,2,2,1,3,3,2,3,1,1,2,3,1,1,2,3,3,2,2,1,1,1,2,1,2,2,1,3,3,3,1,3,3,3,1,3,1,3,2,3,3,2,2,-1,3,1,2,-1,-1,1,2,3,-1,1,-1,1,-1,2,2,1,1,0,1,1,2,2,1,3,3,3,1,3,1,3,3,3,1,-1
+70,2,"#Russia without dignity or shame: the children's hospital in #Mariupol bombed. Deaths and injuries among doctors, nurses and young patients https://t.co/6YggeIlM4p",2,3,3,0,3,0,3,2,3,2,2,2,2,2,2,2,2,1,2,2,1,1,2,2,1,2,1,1,2,2,0,0,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,1,2,1,2,2,-1,2,2,1,1,2,2,2,1,2,2,1,1,1,1,2,2,1,1,0,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,1
+71,2,"Hell in #Mariupol!
+Here is the strategic city flown over by a drone
+The view is atrocious, heartbreaking
+#Putin brought back hell on earth after 77 years: 2500 deaths, no electricity, water, food, heating
+I no longer have doubts: Putin must be stopped. And you?
+@RadioRadicale #Turkey https://t.co/kiwjyK0x2E",0,2,2,1,0,1,0,2,2,2,1,1,2,2,1,1,1,3,1,1,1,1,1,1,1,1,1,0,2,1,3,2,0,2,2,3,2,2,1,1,1,1,2,2,2,0,3,3,0,2,3,2,2,1,1,1,1,1,1,1,2,1,3,2,1,-1,1,-1,2,1,3,3,2,2,1,3,2,2,2,1,3,1,2,2,2,0,3,3,0
+72,1,"@MEcosocialista @La7tv So #Putin asks NATO not to let Ukraine in, ergo it invades and destroys Ukraine and Ukraine must NOT defend itself. It's a reasoning worthy of Hitler",3,0,1,2,1,2,2,3,2,3,3,3,2,3,3,3,3,3,1,3,3,3,1,1,1,3,1,3,2,1,3,2,0,3,2,1,2,3,3,3,3,2,0,0,1,1,1,1,3,3,3,1,2,-1,3,3,3,1,1,1,3,1,3,1,1,1,1,1,2,1,3,3,2,2,1,0,2,1,3,3,3,2,0,1,1,1,3,1,-1
+73,3,"@Adnkronos Putin's Russia has the largest ballistic arsenal in the world....The #USA has run out of javelins and has Himars close to stock levels....The rest of Europe has never been armed. ...
+
+If #Putin had strange ideas, would we throw slingshots at him now?",3,0,0,1,3,2,3,3,2,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,1,3,1,3,2,1,3,3,0,3,0,0,2,3,3,3,3,3,0,2,2,3,0,3,3,3,3,1,2,3,3,3,3,3,1,3,3,3,3,3,1,3,1,1,2,1,3,3,2,3,1,3,2,3,3,3,3,1,2,2,2,3,3,1,3
+74,0,"🔴[NEW ALERT] The United States officially sanctions Vladimir #Putin, MAE Sergei #Lavrov, the Russian Minister of Defense, the Deputy Minister of Defense and the Chief of Staff of the Russian Army. #UkraineRussia #UkraineWar #RussiaUkraineWar #UkraineRussiaConflict https://t.co/Nefo9KG0Jr",0,3,3,2,2,0,0,2,2,1,1,0,1,1,1,0,0,1,0,0,0,1,1,0,2,1,1,1,1,0,0,0,1,3,0,3,1,1,0,0,1,0,1,1,1,1,1,3,2,1,0,0,1,1,0,0,0,1,0,0,0,0,1,-1,2,1,1,1,1,1,0,0,0,3,1,3,1,1,0,0,0,3,0,1,1,3,3,3,2
+75,2,"Because the victims of this filthy war have a name, a face...
+Tetyana is a young mother living on the outskirts of kyiv. In this video, she says: “Parents of Russia, your children are on our land and they are killing us.”
+#Ukraine #UkraineInvasion #RussiaUkraine https://t.co/ogQFdh2cpS",2,3,0,0,2,0,0,2,0,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,3,3,3,0,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,1,1,3,3,3,2,1,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2
+76,2,"#NEWSFLASH
+At least 22 civilians killed in #Russian strike on #Ukrainian city of Chernihiv, rescuers search for more debris #RussianUkrainianWar https://t.co/0muO7JrTcI",1,3,2,1,2,2,3,3,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,0,0,2,2,1,3,1,2,2,2,2,0,1,1,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,0,1,0,2,1,2,0,2,2,2,2,3,0,1,2,2,3,2,2
+78,2,"Invasion of Ukraine: three journalists killed, more than 30 injured since the Russian invasion #Ukraine #WarInUkraine https://t.co/pKNFUiBF7P",2,1,0,2,2,2,1,3,3,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,0,0,2,1,1,3,1,2,2,2,2,0,1,1,1,1,1,3,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,0,1,0,2,1,3,1,2,2,2,2,0,0,1,2,1,3,1,2
+79,2,"#Ukraine 🇺🇦: as a result of today's explosion in #Donetsk, 20 civilians were killed, another 28 people were injured.
+
+A rally against the Russian occupation was planned for today in the city center. https://t.co/KRRdlhxRUU",2,1,2,1,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,0,0,0,2,2,1,3,1,2,2,2,2,0,1,1,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,1,0,2,1,2,0,2,2,2,2,0,0,1,2,2,3,2,2
+80,1,"#warRussiaUkraine
+#PutinWarCriminal
+#Putin
+It's very clear ! and very simple! Just say it loud and clear!
+PUTIN IS AN INVADING AGGRESSOR WAR CRIMINAL!",1,2,1,1,0,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,3,3,1,1,1,1,1,1,1,1,1,1,0,3,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,3,1,2,1,1,1,1,1,3,3,0,1,1,1,1,1,1,3,3,1,0,1,1,1,3,1,1
+82,2,"Another #artist has gone to the #stars.
+
+Death of #OksanaShvets, famous #actress in #Ukraine, killed in a bombing in #Kiev.
+
+https://t.co/xvzXwi0k4h",1,1,1,2,2,1,2,2,3,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,3,3,1,2,2,2,2,0,1,1,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,0,2,2,0,2,2,2,0,2,2,2,2,1,1,1,2,2,2,2,2
+83,1,"🔴 ""#Putin is a war criminal"": ""This is the first time that Joe #Biden has said it [...] This term has weight, meaning, especially today, especially after V's speech. #Zelensky"", reports @AxelMonnier, our correspondent @TF1Info in #RuthElkrief2022 | @ruthelkrief. https://t.co/suQo2Yr9I3",1,1,1,0,0,0,0,0,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,3,3,3,2,1,1,2,1,1,1,1,1,3,0,0,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,3,1,2,-1,1,1,1,3,3,3,0,1,1,2,1,1,1,3,3,1,1,0,1,1,1,1,1
+84,1,"Pentagon accused the Russian military of committing war crimes in Ukraine and said it will help gather evidence. https://t.co/3oZ6FoSG3v
+#UkraineUnderAttack #RussianWarCrimes #RussianUkrainianWar #stoprussia #PutinsWar #putinhitler #russiakills",1,1,1,1,1,2,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,0,0,0,1,3,1,1,1,1,1,1,1,1,1,3,3,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,0,1,1,2,-1,1,1,1,1,0,0,0,3,1,1,1,1,1,1,1,1,0,1,1,3,1,1,1
+85,2,The latest photo of a happy couple Anton &amp; Hannah. The Russians shot at them as they tried to evacuate the kyiv suburb #Bucha. Anton was killed. Their unborn baby also did not survive the attack. In an instant a woman lost everything: her home and her family https://t.co/K5Tro0IODF,2,0,0,1,2,1,0,1,3,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,0,2,2,2,0,2,2,2,2,2,2,1,3,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,3,2,2,2,1,2,2,0,2,2,2,2,2,2,1,1,2,2,2,2
+86,1,"Carla Del Ponte: “Putin is a war criminal” #PutinWarCrimes
+https://t.co/RtnPAYsKIL",1,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,3,0,1,2,1,1,2,2,1,1,1,1,0,1,0,1,1,3,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,3,1,2,1,1,1,1,3,0,0,0,1,1,2,1,1,1,3,3,1,0,1,1,1,3,1,1
+87,2,"🇺🇦#Ukraine: This photo was posted by little Sacha's mother. After weeks of searching, the lifeless body of the 4-year-old boy was found. He was trying to escape the arrival of the Russians with his grandmother, who was found dead on March 11. https://t.co/pwYckMVlgE",2,3,0,0,2,3,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,-1,3,0,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+88,2,Rescuers say human bodies belong to local residents killed by invaders... Another #war crime of the Russian army... #Ukraine https://t.co/4QKT8ytdCr,1,1,1,1,2,2,0,2,1,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,0,1,2,2,1,3,1,2,2,2,2,0,1,1,1,1,3,1,3,2,-1,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,0,0,0,2,2,2,1,2,2,2,2,1,0,1,2,3,3,1,-1
+89,0,War in Ukraine: new round of American sanctions against Russia and Vladimir Putin's daughters #Ukraine #WarInUkraine https://t.co/1pMwi1IVrl,1,0,2,0,3,2,0,1,0,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,2,1,1,1,1,2,3,2,0,3,2,1,1,1,3,1,1,0,3,3,3,1,2,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,1,0,2,1,-1,-1,1,0,3,3,0,1,2,3,1,1,0,-1,0,1,3,3,3,1,3,1,0
+90,3,Let's give offensive weapons to #Ukraine to face #Putin's #Barbaric offensive @florence_parly @EmmanuelMacron @JY_LeDrian @BelieverEuro @CharlesMichel #invasionofUkraine,3,1,2,2,1,2,0,3,3,3,3,3,1,0,3,3,3,1,3,3,3,3,3,3,2,3,3,3,1,1,2,2,2,3,3,3,1,3,3,3,3,1,3,3,3,1,3,3,3,3,3,3,1,-1,3,3,3,1,3,3,3,-1,3,3,2,3,3,3,1,1,2,3,1,1,1,0,1,1,3,3,3,1,3,1,3,1,3,3,3
+91,1,"via @franceinfo: ""Mr. Putin was wrong about almost everything. This war has been an error of interpretation from the start.""
+
+#UKRAINE On franceinfo, this former general, now professor of strategy at Sciences Po and HEC, looks back on… https://t.co/LUEEWmkrOF",3,0,1,1,0,3,1,0,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,2,1,1,3,1,3,2,0,2,1,3,2,1,1,3,3,3,3,2,0,2,1,1,1,1,1,3,1,1,1,1,3,1,1,1,1,1,1,3,1,2,1,1,1,1,3,-1,0,0,1,1,2,1,1,1,3,3,1,2,0,2,1,3,1,3
+92,2,🔴 6 people shot dead found in a basement in the suburbs of kyiv. #RussianUkrainianWar #Ukraine #UkraineUnderAttack,2,3,0,1,2,2,1,3,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,3,2,2,2,2,3,3,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,3,2,2,0,2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2
+93,1,#Putin's criminal and corrupt #Russia tortures prisoners of war!!!! #Ukraine https://t.co/N4DsjpeMH2,1,1,1,2,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,-1,2,2,1,1,1,1,1,2,2,0,2,2,1,1,1,1,1,1,1,3,1,2,1,1,1,1
+94,1,"[Thread] Here is proof of another Russian war crime. In this phone call, a Russian commander orders his subordinate to kill Ukrainian prisoners of war in the town of Popasna in eastern #Ukraine.
+#UkraineRussiaWar https://t.co/zmqbx0DAv0",1,1,1,3,2,1,1,3,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,0,0,2,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,-1,1,0,1,1,2,1,1,1,1,2,1,1,0,1,1,1,1,1,1,1,1,3,0,1,2,3,1,1,1
+95,2,"#UKRAINE After the missile strikes which left at least six dead and eight injured in Lviv, residents of this western city, relatively untouched by the fighting, fled. https://t.co/gstUdeuGXW via @franceinfo",1,0,2,2,2,2,0,2,1,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,3,2,2,3,3,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,3,1,2,3,2,0,2,2,2,2,2,2,2,2,2,3,2,2
+96,1,"@corre_marie @Willvs @renkatrousssier if you say ""war"" to him he won't respond.. #operationSpecial: the Ukrainians refuse to be ""liberated"" by Putin; so by ""attacking"" the Russians the war becomes automatic due to #Zelensky (must follow!)",1,1,1,1,3,2,1,2,0,3,3,1,1,0,3,3,3,3,1,3,1,3,1,1,2,0,1,3,1,1,3,2,0,1,3,3,1,3,3,3,3,1,0,0,3,1,1,3,1,3,3,1,1,-1,3,3,1,1,1,1,1,-1,3,1,2,-1,1,1,1,1,3,3,2,2,1,0,1,1,3,3,3,1,0,1,1,2,3,3,3
+97,0,"The boomerang effect has already been triggered. Sanctions against Russia generate global economic risks, which are major, particularly for the 🇫🇷. And Bruno Lemaire who thought he would bring #Russia to its knees. #Ukraine https://t.co/tpEU0sqqYF",2,1,2,2,0,0,2,2,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,1,0,0,0,2,1,0,0,0,0,0,0,3,1,3,3,3,0,0,0,1,-1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,3,1,3,1,3,0,0,0,0
+98,3,"It is with these #ukronazi #bandits that #NATO is sending billions of dollars worth of weapons to weaken #Russia. But, the #war will enter its third phase, the #worldwar, where Westerners will be required to invest militarily on the ground. https://t.co/bmPvW1WYgw",3,1,2,1,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,3,2,3,3,3,1,1,3,2,0,3,3,3,1,3,3,3,3,1,3,3,0,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,3,2,-1,1,1,1,1,3,3,2,3,2,0,1,1,3,3,3,3,3,1,0,3,3,3,3
+99,0,#Zelensky calls on #Europe to “retaliate” to the “gas war” by strengthening sanctions against #Russia,1,3,1,0,3,0,3,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,1,3,3,2,0,0,0,0,1,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,1,3,3,3,0,0,0,0,1,0,0,0,0,1,0,1,3,0,0,0,0
+100,0,"The #EU visa ban on Russian citizens 🇷🇺 is something that clearly hurts the #Kremlin since many Russians will then blame the Russian dictator for losing their vacation.
+
+This is exactly why we need to do it.
+#Russia #Russian #EU https://t.co/SmrvNVMXjc https://t.co/VKa6UUoVE0",0,1,0,2,2,0,3,3,3,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,2,1,0,0,1,0,0,0,2,3,2,1,0,0,0,0,0,0,1,3,1,0,1,0,1,0,-1,0,1,0,-1,0,0,1,0,0,0,-1,0,0,2,1,0,1,1,0,0,0,0,1,2,1,0,1,1,0,0,0,0,1,2,0,1,0,-1
+101,2,Ukraine: at least two civilians killed and 10 injured after Russian strikes in Kramatorsk https://t.co/3fVzRcnQEV #Ukraine #War #Russia,1,1,2,2,2,2,2,2,0,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,0,1,2,1,1,3,1,2,2,2,2,0,1,1,1,1,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,1,0,1,2,2,1,2,2,2,2,0,0,1,2,2,3,3,2
+102,1,ALERT - The International Criminal Court issues an arrest warrant against Russian President Vladimir #Putin for war crimes in Ukraine. https://t.co/50VXbCbPyR,1,1,1,2,1,2,3,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,-1,1,0,1,1,2,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1
+103,1,"🔴 #UkraineRussianWar
+URGENT‼️
+The International Criminal Court issued an arrest warrant for Russian President Vladimir Putin on Friday, charging him with war crimes for the illegal deportation of children from Ukraine to Russia.
+#CIV225 #Mali #Burkina #Niger #Senegal https://t.co/C7YTYf6dR6",1,1,1,3,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,0,1,1,2,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1
+104,1,"War in #Ukraine: #Russia committed wide range of war crimes, says UN Commission of Inquiry report
+
+@UN_HRC
+
+https://t.co/SuLTs6bgw1",1,1,1,0,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,3,3,3,2,1,1,1,1,1,1,1,1,1,3,3,3,0,1,1,1,1,1,2,1,1,1,1,1,0,1,1,1,0,1,1,2,1,1,1,1,3,3,3,1,1,1,1,1,1,1,1,1,1,3,3,3,0,1,1,1
+105,3,#Ukraine Ukraine will not receive F-16 even after six months - Rakhmanin https://t.co/ae3OlCuI5A,1,3,3,2,3,3,0,2,3,3,3,3,1,1,3,3,3,1,3,3,3,1,3,3,2,2,3,3,1,2,1,3,2,1,3,3,0,1,3,3,3,3,0,0,0,1,3,3,2,-1,3,3,1,-1,3,3,-1,1,3,3,3,-1,3,3,2,2,3,-1,1,2,1,3,1,2,3,3,0,1,3,-1,-1,2,1,0,0,3,3,1,2

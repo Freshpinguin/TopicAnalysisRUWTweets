@@ -48,9 +48,27 @@ def average_coherence(
         topn=top_n,
     )
 
-    coherence_per_topic = cm.get_coherence_per_topic()
+    coherence_per_topic_score = cm.get_coherence_per_topic()
 
-    return np.mean(coherence_per_topic)
+    return np.mean(coherence_per_topic_score)
+
+
+def coherence_per_topic(
+    topics: list[list[str]], evaluation_space: list[list[str]], top_n=40
+) -> list[float]:
+    """
+    Calculate coherence score for all topics.
+    """
+    dic = Dictionary(evaluation_space)
+    cm = CoherenceModel(
+        topics=topics,
+        texts=evaluation_space,
+        coherence="c_npmi",
+        dictionary=dic,
+        topn=top_n,
+    )
+
+    return cm.get_coherence_per_topic()
 
 
 def diversity_score(topics: list[list[str]], top_n=40) -> float:
@@ -60,6 +78,28 @@ def diversity_score(topics: list[list[str]], top_n=40) -> float:
     unique_words = set()
     for topic in topics:
         unique_words = unique_words.union(set(topic[:top_n]))
+    td = len(unique_words) / (top_n * len(topics))
+
+    return td
+
+
+from collections import Counter
+
+
+def diversity_score_sorted(topics: list[list[str]], top_n=40) -> float:
+    """
+    Calculate diversity score over all topics.
+    """
+
+    ordered_topics = []
+    for topic in topics:
+        c = Counter()
+        c.update(topic)
+        ordered_topics.append([x[0] for x in c.most_common(top_n)])
+
+    unique_words = set()
+    for topic in ordered_topics:
+        unique_words = unique_words.union(set(topic))
     td = len(unique_words) / (top_n * len(topics))
 
     return td
@@ -89,3 +129,79 @@ def calculate_metrics(
     diversity = diversity_score(list_of_topics)
 
     return {"coherence": coherence, "diversity": diversity}
+
+
+def calculate_metrics_weighted(
+    df: pd.DataFrame, topics: list[int], eval_space_column: str, top_n: int = 40
+) -> dict[str, float]:
+    """
+    Prepare cohencere space and list of topics, then calculate coherence and diversity score and return as dict.
+    """
+    list_of_topics, list_of_texts = prepare_coherence_space(
+        df, topics, eval_space_column
+    )
+    unique_topics = pd.Series(topics).unique().tolist()
+
+    coherence = coherence_per_topic(list_of_topics, list_of_texts, top_n=top_n)
+    diversity_sorted = diversity_score_sorted(list_of_topics, top_n=40)
+
+    topic_series = pd.Series(topics)
+    topic_series = topic_series[topic_series != -1]
+    scores = pd.Series(
+        {topic: score for topic, score in zip(unique_topics, coherence) if topic != -1}
+    )
+
+    new_scores = {}
+
+    for topic, weight in (
+        (topic_series.value_counts() / topic_series.shape[0]).to_dict().items()
+    ):
+        new_scores[topic] = weight * scores[topic]
+
+    return {
+        "coherence": np.array(list(new_scores.values())).mean(),
+        "diversity": diversity_sorted,
+    }
+
+
+def calculate_metrics_weighted_sorted(
+    df: pd.DataFrame, topics: list[int], eval_space_column: str, top_n: int = 40
+) -> dict[str, float]:
+    """
+    Prepare cohencere space and list of topics, then calculate coherence and diversity score and return as dict.
+    """
+    list_of_topics, list_of_texts = prepare_coherence_space(
+        df, topics, eval_space_column
+    )
+    unique_topics = pd.Series(topics).unique().tolist()
+
+    ordered_topics = []
+    for topic in list_of_topics:
+        c = Counter()
+        c.update(topic)
+        ordered_topics.append([x[0] for x in c.most_common()])
+
+    coherence = coherence_per_topic(ordered_topics, list_of_texts, top_n=top_n)
+
+    coherence = np.array(coherence)
+    coherence[np.isnan(coherence)] = 0
+
+    diversity_sorted = diversity_score(ordered_topics, top_n=40)
+
+    topic_series = pd.Series(topics)
+    topic_series = topic_series[topic_series != -1]
+    scores = pd.Series(
+        {topic: score for topic, score in zip(unique_topics, coherence) if topic != -1}
+    )
+
+    new_scores = {}
+
+    for topic, weight in (
+        (topic_series.value_counts() / topic_series.shape[0]).to_dict().items()
+    ):
+        new_scores[topic] = weight * scores[topic]
+
+    return {
+        "coherence": np.array(list(new_scores.values())).mean(),
+        "diversity": diversity_sorted,
+    }
