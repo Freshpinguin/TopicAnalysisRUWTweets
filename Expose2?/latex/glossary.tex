@@ -1,0 +1,67 @@
+\newacronym{AST}{AST}{\gls{Abstract_syntax_tree}}
+\newacronym{LSP}{LSP}{\gls{Language_Server_Protocol}}
+
+\newglossaryentry{library}
+{
+    name={library},
+    description={A suite of reusable code inside of a programming language for software development}
+}
+
+\newglossaryentry{shell}
+{
+    name={shell},
+    description={Program which runs in a terminal emulator and processes entered commands by the user. 
+    Most shell also provide their own scripting language.}
+}
+
+\newglossaryentry{Nushell}
+{
+    name={Nushell},
+    description={\gls{shell} which is not posix complaint and is written rust} 
+}
+
+\newglossaryentry{Abstract_syntax_tree}
+{
+    name={Abstract Syntax Tree},
+    description={Intermediate representation of the program. It is produced by the parser.
+    In contrast to a concrete syntax tree it omits details which were only needed for parse algorithm.
+    As an example this representation is used for code generation by a compiler
+    , the execution of the program in question by the interpreter or providing \gls{language_smarts} by a LSP Server}
+}
+
+\newglossaryentry{Language_Server_Protocol}
+{
+    name={Language Server Protocol},
+    description={Protocol for inter process communication between the \gls{source_text_editor} as the client and the language server as server \cite{LSP_what_is_it}.
+    The language server provides the \gls{language_smarts} to the client. Request, notifications, responses of client and server are exchanged over RPC and JSON-RPC 2.0.} 
+}
+
+\newglossaryentry{Language_Server}
+{
+    name={Language Server},
+    description={Server which provides the \gls{language_smarts} to a \gls{source_text_editor}}.
+}
+
+\newglossaryentry{scripting}
+{
+    name={scripting language},
+    description={Programming language which uses the facility of an existing program like a shell in a terminal.}
+}
+
+\newglossaryentry{language_smarts}
+{
+    name={language smarts},
+    description={Examples of language smarts are "such as code completion, goto definition, and validations"\cite{bunder2019decoupling}. 
+    Of this examples one can describe language smarts as features 
+    which provide information, modification and navigation of source code of textual programming language or DSL during development}
+}
+
+\newglossaryentry{source_text_editor}
+{
+    name={source text editor},
+    description={Software for writing the source code of a program to be developed. 
+                 This can be a CLI editor, text editor, source-code editor or an IDE.}
+}
+
+
+\glsaddall

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.21)  19 JAN 2024 10:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.21)  24 APR 2024 14:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1282,7 +1282,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 13
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./thesis.aux
-(./cover.aux))
+(./cover.aux) (./chapter.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 132.
@@ -1483,7 +1483,7 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 
 
 
-]
+] (./chapter.tex
 chapter without number
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -1496,6 +1496,7 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 (scrbook)              KOMA-Script and will not work with a coming version,
 (scrbook)              that will remove this deprecated code.
 
+)
 chapter without number
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -1575,11 +1576,11 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 [7]
 
 Package glossaries Warning: \makenoidxglossaries is required to make \printnoid
-xglossary[type={main}] work on input line 215.
+xglossary[type={main}] work on input line 213.
 
 
 Package glossaries Warning: \makenoidxglossaries is required to make \printnoid
-xglossary[type={acronym}] work on input line 215.
+xglossary[type={acronym}] work on input line 213.
 
 (./thesis.bbl
 chapter without number
@@ -1691,10 +1692,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37213 strings out of 476025
- 738860 string characters out of 5790017
+ 37223 strings out of 476025
+ 739005 string characters out of 5790017
  1867388 words of memory out of 5000000
- 56917 multiletter control sequences out of 15000+600000
+ 56923 multiletter control sequences out of 15000+600000
  566373 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,19n,106p,10601b,714s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1705,7 +1706,7 @@ xmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fo
 nts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/p
 ublic/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lm
 ri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on thesis.pdf (10 pages, 254692 bytes).
+Output written on thesis.pdf (10 pages, 253682 bytes).
 PDF statistics:
  256 PDF objects out of 1000 (max. 8388607)
  224 compressed objects within 3 object streams

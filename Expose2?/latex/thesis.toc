@@ -1,0 +1,11 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\nonumberline Introduction}{2}{chapter*.2}%
+\contentsline {chapter}{\nonumberline Objective}{3}{chapter*.3}%
+\contentsline {chapter}{\nonumberline State of Research}{4}{chapter*.4}%
+\contentsline {chapter}{\nonumberline Technology}{4}{chapter*.5}%
+\contentsline {chapter}{\nonumberline Data Set}{5}{chapter*.6}%
+\contentsline {chapter}{\nonumberline Preprocessing}{6}{chapter*.7}%
+\contentsline {chapter}{\nonumberline Methodology}{6}{chapter*.8}%
+\contentsline {chapter}{\nonumberline Reference Tools}{7}{chapter*.9}%
+\contentsline {chapter}{\nonumberline References}{8}{chapter*.10}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

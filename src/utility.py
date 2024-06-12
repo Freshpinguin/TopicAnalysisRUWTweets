@@ -5,7 +5,6 @@ Contains utility functions that are needed across multiple chapters.
 from typing import Iterator, Callable
 import pandas as pd
 import warnings
-from tqdm.auto import tqdm
 import os
 
 import pandas as pd
@@ -13,8 +12,9 @@ import numpy as np
 from src.SampleTranslation05.translation_01 import load_samples
 from typing import Callable
 
-# register `pandas.progress_apply` and `pandas.Series.map_apply` with `tqdm`
+from tqdm.auto import tqdm
 tqdm.pandas()
+# register `pandas.progress_apply` and `pandas.Series.map_apply` with `tqdm`
 
 
 def iterate_dataframes(path: str) -> Iterator[pd.DataFrame]:
