@@ -28,7 +28,7 @@ def wordcloud(
     plt.show()
 
 
-def wordclouds(frequencies: list[Counter]):
+def wordclouds(frequencies: list[Counter], titles: list[str]):
     sns.set_theme(style="whitegrid")
     plt.rcParams["figure.figsize"] = [25, 40]
     # plt.tight_layout()
@@ -49,6 +49,7 @@ def wordclouds(frequencies: list[Counter]):
         wc.generate_from_frequencies(frequencies[index])
         axs[x_ind, y_ind].imshow(wc, interpolation="bilinear")
         axs[x_ind, y_ind].axis("off")
+        axs.title(titles[index])
 
     plt.axis("off")
     plt.show()

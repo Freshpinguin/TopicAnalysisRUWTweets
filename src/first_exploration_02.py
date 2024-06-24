@@ -381,13 +381,13 @@ def stackplot_languages_over_weeks(
     )
 
     ax.legend(loc="upper left")
-    ax.set_title("Number of Tweets in Dataset")
+    ax.set_title("Number of Tweets in Dataset by Language per Week")
     ax.set_xlabel("Week")
 
-    ax.set_ylabel("Number of Tweets per Week")
+    ax.set_ylabel("Number of Tweets per Week in Million")
 
     if save_path:
-        plt.savefig(save_path)
+        ç
     plt.show()
 
 
@@ -434,9 +434,9 @@ def stackplot_duplicates_over_weeks(df: pd.DataFrame, save_path: str = None) -> 
         warnings.filterwarnings("ignore")
         ax.set_xticklabels(index)
     ax.legend(loc="upper left")
-    ax.set_title("Number of Tweets in Dataset")
+    ax.set_title("Number of Duplicated Tweets in Dataset")
     ax.set_xlabel("Week")
-    ax.set_ylabel("Number of Tweets sum per Week")
+    ax.set_ylabel("Number of Tweets per Week in Million")
 
     if save_path:
         plt.savefig(save_path)
