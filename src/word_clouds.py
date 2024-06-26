@@ -49,7 +49,7 @@ def wordclouds(frequencies: list[Counter], titles: list[str]):
         wc.generate_from_frequencies(frequencies[index])
         axs[x_ind, y_ind].imshow(wc, interpolation="bilinear")
         axs[x_ind, y_ind].axis("off")
-        axs.title(titles[index])
+        # axs.title(titles[index])
 
     plt.axis("off")
     plt.show()
